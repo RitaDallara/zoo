@@ -215,3 +215,51 @@ Processing by QuizzesController#new as HTML
   Rendered quizzes/_form.html.erb (25.5ms)
   Rendered quizzes/new.html.erb within layouts/application (29.4ms)
 Completed 200 OK in 39ms (Views: 36.3ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140122003416)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "max_easy" integer, "max_medium" integer, "max_hard" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140122003416"]]
+  [1m[36m (302.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-01-22 00:53:05 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 760ms (Views: 731.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-22 00:53:07 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-22 00:53:07 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-22 00:53:07 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-22 00:53:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-22 00:53:07 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-22 00:53:07 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-22 00:53:07 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-22 00:53:07 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-22 00:53:07 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-22 00:53:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-22 00:53:07 +0100
