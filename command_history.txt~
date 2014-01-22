@@ -34,15 +34,6 @@ rake db:migrate
 
 
 rails generate devise:install
-rails generate devise User
-rake db:migrate
-
-http://sergiotapia.me/rails-4-authentication-using-devise/
-
-
-
-
-
 
 
 

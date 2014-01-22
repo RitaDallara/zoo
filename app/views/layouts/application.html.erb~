@@ -14,7 +14,7 @@
 
   <%= yield %>
 
-  <%= render :partial => 'layouts/user_widget' %>
+  <%= render:partial => 'layouts/user_widget' %>
 
 </body>
 </html>
