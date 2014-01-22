@@ -1,4 +1,6 @@
 Zoo::Application.routes.draw do
+  get "pages/home"
+  get "pages/about"
   devise_for :users
   resources :users
 
@@ -12,7 +14,7 @@ Zoo::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  root to: 'home#index'
+  root :to => 'pages#home'
 
 
   # Example of regular route:

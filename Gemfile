@@ -27,10 +27,16 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# Easy login
 gem 'devise'
 
+# Role management
 gem 'rolify'
 
+# Permission management
+gem 'cancan'
+
+# Prittier console output
 gem 'hirb'
 
 group :doc do
