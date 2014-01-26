@@ -2623,3 +2623,2026 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 20:29:52 +0100
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 20:29:52 +0100
+
+
+Started GET "/animals/" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (0.2ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_user_widget.html.erb (12.3ms)
+Completed 200 OK in 151ms (Views: 116.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 20:39:22 +0100
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2014-01-25 20:39:24 +0100
+Processing by AnimalsController#new as HTML
+  Rendered animals/_form.html.erb (16.8ms)
+  Rendered animals/new.html.erb within layouts/application (18.6ms)
+  Rendered layouts/_user_widget.html.erb (2.1ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (0.2ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (13.7ms)
+  Rendered layouts/_user_widget.html.erb (12.1ms)
+Completed 200 OK in 152ms (Views: 117.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:39 +0100
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2014-01-25 20:41:42 +0100
+Processing by AnimalsController#new as HTML
+  Rendered animals/_form.html.erb (18.0ms)
+  Rendered animals/new.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_user_widget.html.erb (1.5ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/animals" for 127.0.0.1 at 2014-01-25 20:41:55 +0100
+Processing by AnimalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5U89q4vuCfadKS+yptjEGy0qaRBGfKeFKMgLYf/T/RE=", "animal"=>{"name"=>"topo", "image"=>"img_topo", "sound"=>"verso_topo"}, "commit"=>"Create Animal"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "animals" ("created_at", "image", "name", "sound", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 25 Jan 2014 19:41:55 UTC +00:00], ["image", "img_topo"], ["name", "topo"], ["sound", "verso_topo"], ["updated_at", Sat, 25 Jan 2014 19:41:55 UTC +00:00]]
+  [1m[36m (201.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/animals/2
+Completed 302 Found in 213ms (ActiveRecord: 205.2ms)
+
+
+Started GET "/animals/2" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAnimal Load (0.3ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered animals/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_user_widget.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 20:41:56 +0100
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-25 20:41:59 +0100
+Processing by AnimalsController#index as HTML
+  [1m[36mAnimal Load (0.4ms)[0m  [1mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_user_widget.html.erb (0.6ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:06:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (0.2ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (13.9ms)
+  Rendered layouts/_user_widget.html.erb (12.4ms)
+Completed 200 OK in 151ms (Views: 117.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:37 +0100
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2014-01-26 00:06:41 +0100
+Processing by AnimalsController#new as HTML
+  Rendered animals/_form.html.erb (22.1ms)
+  Rendered animals/new.html.erb within layouts/application (24.1ms)
+  Rendered layouts/_user_widget.html.erb (1.7ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/animals" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+Processing by AnimalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5U89q4vuCfadKS+yptjEGy0qaRBGfKeFKMgLYf/T/RE=", "animal"=>{"name"=>"ape", "image"=>"ape_img", "sound"=>"ape_verso"}, "commit"=>"Create Animal"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "animals" ("created_at", "image", "name", "sound", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 25 Jan 2014 23:06:57 UTC +00:00], ["image", "ape_img"], ["name", "ape"], ["sound", "ape_verso"], ["updated_at", Sat, 25 Jan 2014 23:06:57 UTC +00:00]]
+  [1m[36m (215.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/animals/3
+Completed 302 Found in 229ms (ActiveRecord: 219.2ms)
+
+
+Started GET "/animals/3" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAnimal Load (0.3ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered animals/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_user_widget.html.erb (0.6ms)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:06:57 +0100
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:07:03 +0100
+Processing by AnimalsController#index as HTML
+  [1m[36mAnimal Load (0.5ms)[0m  [1mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_user_widget.html.erb (0.6ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:07:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (0.2ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_user_widget.html.erb (12.6ms)
+Completed 200 OK in 157ms (Views: 122.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:07:47 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:07:47 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:07:47 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:07:47 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:07:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:07:48 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:07:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:07:48 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:07:48 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:07:48 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:07:48 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:07:48 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:07:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:07:48 +0100
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2014-01-26 00:07:50 +0100
+Processing by AnimalsController#new as HTML
+  Rendered animals/_form.html.erb (18.5ms)
+  Rendered animals/new.html.erb within layouts/application (20.1ms)
+  Rendered layouts/_user_widget.html.erb (2.2ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/animals" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+Processing by AnimalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5U89q4vuCfadKS+yptjEGy0qaRBGfKeFKMgLYf/T/RE=", "animal"=>{"name"=>"mosca", "image"=>"mosca_img", "sound"=>"mosca_verso"}, "commit"=>"Create Animal"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.3ms)[0m  INSERT INTO "animals" ("created_at", "image", "name", "sound", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 25 Jan 2014 23:08:10 UTC +00:00], ["image", "mosca_img"], ["name", "mosca"], ["sound", "mosca_verso"], ["updated_at", Sat, 25 Jan 2014 23:08:10 UTC +00:00]]
+  [1m[36m (189.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/animals/4
+Completed 302 Found in 212ms (ActiveRecord: 197.1ms)
+
+
+Started GET "/animals/4" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAnimal Load (0.3ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered animals/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_user_widget.html.erb (0.6ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:08:10 +0100
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:08:14 +0100
+Processing by AnimalsController#index as HTML
+  [1m[36mAnimal Load (0.3ms)[0m  [1mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_user_widget.html.erb (0.6ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/animals/" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (0.3ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (16.9ms)
+  Rendered layouts/_user_widget.html.erb (12.1ms)
+Completed 200 OK in 160ms (Views: 126.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:06 +0100
+
+
+Started GET "/animals/3/edit" for 127.0.0.1 at 2014-01-26 00:09:08 +0100
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered animals/_form.html.erb (21.5ms)
+  Rendered animals/edit.html.erb within layouts/application (23.8ms)
+  Rendered layouts/_user_widget.html.erb (1.5ms)
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/animals/3" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+Processing by AnimalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5U89q4vuCfadKS+yptjEGy0qaRBGfKeFKMgLYf/T/RE=", "animal"=>{"name"=>"ape", "image"=>"ape_img", "sound"=>"ape_verso"}, "commit"=>"Update Animal", "id"=>"3"}
+  [1m[35mAnimal Load (0.2ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/animals/3
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/animals/3" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered animals/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_user_widget.html.erb (0.8ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:09:12 +0100
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[36mUser Load (3.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from irb_binding at (irb):2)
+  [1m[35mRole Load (0.6ms)[0m  SELECT "roles".* FROM "roles" WHERE "roles"."name" = 'admin' AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT 1
+  [1m[36mRole Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = 1 LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from irb_binding at (irb):4)
+  [1m[36mRole Load (0.5ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."name" = 'user' AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "roles" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 25 Jan 2014 23:35:20 UTC +00:00], ["name", "user"], ["updated_at", Sat, 25 Jan 2014 23:35:20 UTC +00:00]]
+  [1m[35m (120.0ms)[0m  commit transaction
+  [1m[36mRole Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = 2 LIMIT 1[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT "roles".id FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?  [["user_id", 2]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "users_roles" ("user_id", "role_id") VALUES (2, 2)
+  [1m[36m (127.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:35:39 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (0.2ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_user_widget.html.erb (12.6ms)
+Completed 200 OK in 151ms (Views: 117.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:35:39 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:35:39 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:35:39 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:35:39 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:35:39 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:35:39 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:35:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:35:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:35:40 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:35:40 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:35:40 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:35:40 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:35:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:35:40 +0100
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2014-01-26 00:35:48 +0100
+Processing by AnimalsController#new as HTML
+  Rendered animals/_form.html.erb (19.1ms)
+  Rendered animals/new.html.erb within layouts/application (21.2ms)
+  Rendered layouts/_user_widget.html.erb (1.3ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-26 00:35:59 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/devise-3.2.2/app/views/devise/shared/_links.erb (2.7ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (26.4ms)
+  Rendered layouts/_user_widget.html.erb (0.7ms)
+Completed 200 OK in 98ms (Views: 61.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-26 00:36:12 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5U89q4vuCfadKS+yptjEGy0qaRBGfKeFKMgLYf/T/RE=", "user"=>{"email"=>"rita.dallara@student.unife.it", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'rita.dallara@student.unife.it' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.2ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2[0m  [["current_sign_in_at", Sat, 25 Jan 2014 23:36:13 UTC +00:00], ["sign_in_count", 2], ["updated_at", Sat, 25 Jan 2014 23:36:13 UTC +00:00]]
+  [1m[35m (159.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 323ms (ActiveRecord: 162.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_user_widget.html.erb (3.3ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:13 +0100
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:36:26 +0100
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (0.3ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_user_widget.html.erb (1.5ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:26 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:26 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:26 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:26 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:26 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:26 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:26 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:27 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:27 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:27 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:27 +0100
+
+
+Started GET "/animals/2/edit" for 127.0.0.1 at 2014-01-26 00:36:30 +0100
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAnimal Load (0.3ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered animals/_form.html.erb (3.5ms)
+  Rendered animals/edit.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_user_widget.html.erb (1.9ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/animals/2" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+Processing by AnimalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HPlZIdSMos6mVvvw6lTHpQmDWiQudLFIbMdOWkf5/7g=", "animal"=>{"name"=>"topo", "image"=>"img_topo", "sound"=>"verso_topo"}, "commit"=>"Update Animal", "id"=>"2"}
+  [1m[35mAnimal Load (0.3ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/animals/2
+Completed 302 Found in 11ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/animals/2" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered animals/show.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_user_widget.html.erb (2.5ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:33 +0100
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:36:37 +0100
+Processing by AnimalsController#index as HTML
+  [1m[36mAnimal Load (0.3ms)[0m  [1mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (6.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_user_widget.html.erb (1.7ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/animals/1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+Processing by AnimalsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HPlZIdSMos6mVvvw6lTHpQmDWiQudLFIbMdOWkf5/7g=", "id"=>"1"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles" WHERE "roles"."resource_id" = ? AND "roles"."resource_type" = ?[0m  [["resource_id", 1], ["resource_type", "Animal"]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "animals" WHERE "animals"."id" = ?  [["id", 1]]
+  [1m[36m (157.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/animals
+Completed 302 Found in 200ms (ActiveRecord: 158.1ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (0.5ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_user_widget.html.erb (2.1ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:36:42 +0100
+  [1m[36mUser Load (4.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 2]]
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'user') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:39:18 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  [1m[35mAnimal Load (0.2ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (13.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_user_widget.html.erb (26.4ms)
+Completed 200 OK in 166ms (Views: 131.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:39:18 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:39:18 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:39:18 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:39:18 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:39:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:18 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:39:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:18 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:19 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:19 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:19 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:19 +0100
+
+
+Started GET "/animals/3/edit" for 127.0.0.1 at 2014-01-26 00:39:22 +0100
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAnimal Load (0.4ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered animals/_form.html.erb (30.3ms)
+  Rendered animals/edit.html.erb within layouts/application (32.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_user_widget.html.erb (3.8ms)
+Completed 200 OK in 53ms (Views: 49.3ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/animals/3" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+Processing by AnimalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HPlZIdSMos6mVvvw6lTHpQmDWiQudLFIbMdOWkf5/7g=", "animal"=>{"name"=>"ape", "image"=>"ape_img", "sound"=>"ape_verso"}, "commit"=>"Update Animal", "id"=>"3"}
+  [1m[35mAnimal Load (0.3ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/animals/3
+Completed 302 Found in 11ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/animals/3" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered animals/show.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_user_widget.html.erb (1.9ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:39:28 +0100
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:39:32 +0100
+Processing by AnimalsController#index as HTML
+  [1m[36mAnimal Load (0.2ms)[0m  [1mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (4.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_user_widget.html.erb (1.8ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:52:03 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 28ms
+
+NameError (undefined local variable or method `load_and_authorize_resource' for #<Class:0x00000002fbdc48>):
+  app/models/animal.rb:2:in `<class:Animal>'
+  app/models/animal.rb:1:in `<top (required)>'
+  app/controllers/animals_controller.rb:7:in `index'
+
+
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:52:06 +0100
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+NameError (undefined local variable or method `load_and_authorize_resource' for #<Class:0x00000003bf3698>):
+  app/models/animal.rb:2:in `<class:Animal>'
+  app/models/animal.rb:1:in `<top (required)>'
+  app/controllers/animals_controller.rb:7:in `index'
+
+
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (34.1ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.2ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:55:49 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'user') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 2]]
+Completed 500 Internal Server Error in 142ms
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.6.10) lib/cancan/ability.rb:208:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_additions.rb:338:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:41:in `authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:26:in `load_and_authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:10:in `block in add_before_filter'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:407:in `_run__2862714483079689607__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__2092162752666643456__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/rita/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/rita/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/rita/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (40.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_user_widget.html.erb (2.7ms)
+Completed 200 OK in 103ms (Views: 100.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:01 +0100
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HPlZIdSMos6mVvvw6lTHpQmDWiQudLFIbMdOWkf5/7g="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_user_widget.html.erb (11.8ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:08 +0100
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:56:16 +0100
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 10ms
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.6.10) lib/cancan/ability.rb:208:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_additions.rb:338:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:41:in `authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:26:in `load_and_authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:10:in `block in add_before_filter'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:407:in `_run__2862714483079689607__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__2092162752666643456__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/rita/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/rita/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/rita/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_user_widget.html.erb (1.2ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:26 +0100
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-26 00:56:30 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/devise-3.2.2/app/views/devise/shared/_links.erb (4.1ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (19.5ms)
+  Rendered layouts/_user_widget.html.erb (0.8ms)
+Completed 200 OK in 37ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T7r1cpVuS5cBoahtbMm6QE9QNIgpZVXDhWhhKhrojZU=", "user"=>{"email"=>"ventu.emme@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'ventu.emme@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", Sat, 25 Jan 2014 23:56:51 UTC +00:00], ["sign_in_count", 2], ["updated_at", Sat, 25 Jan 2014 23:56:51 UTC +00:00]]
+  [1m[36m (121.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 258ms (ActiveRecord: 123.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_user_widget.html.erb (3.0ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:51 +0100
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+Processing by AnimalsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 1]]
+  [1m[36mAnimal Load (0.2ms)[0m  [1mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_user_widget.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 22.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:56:58 +0100
+
+
+Started GET "/animals/2/edit" for 127.0.0.1 at 2014-01-26 00:57:02 +0100
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAnimal Load (0.3ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered animals/_form.html.erb (4.5ms)
+  Rendered animals/edit.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_user_widget.html.erb (1.0ms)
+Completed 200 OK in 71ms (Views: 59.7ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/animals/2" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+Processing by AnimalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZkbQKCVjt6vRUaLPUV10+d5H3loQ1rxt8qASh0iF6GU=", "animal"=>{"name"=>"topo", "image"=>"img_topo", "sound"=>"verso_topo"}, "commit"=>"Update Animal", "id"=>"2"}
+  [1m[35mAnimal Load (0.2ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/animals/2
+Completed 302 Found in 15ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/animals/2" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAnimal Load (0.4ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered animals/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_user_widget.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 9.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:57:04 +0100
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:58:05 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 1]]
+  [1m[35mAnimal Load (0.3ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_user_widget.html.erb (1.0ms)
+Completed 200 OK in 228ms (Views: 104.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:05 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:05 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:05 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:05 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:05 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:05 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:06 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:06 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:06 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:06 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:06 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:06 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:06 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:06 +0100
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZkbQKCVjt6vRUaLPUV10+d5H3loQ1rxt8qASh0iF6GU="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 53ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_user_widget.html.erb (12.2ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:08 +0100
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-26 00:58:10 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/devise-3.2.2/app/views/devise/shared/_links.erb (2.0ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (26.1ms)
+  Rendered layouts/_user_widget.html.erb (0.7ms)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-26 00:58:37 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s0nGrEBB0tDpFdI9ILNe7QW1RLj/kfzh5RmLUaIzxC0=", "user"=>{"email"=>"rita.dallara@student.unife.it", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'rita.dallara@student.unife.it' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2  [["last_sign_in_at", Sat, 25 Jan 2014 23:36:13 UTC +00:00], ["current_sign_in_at", Sat, 25 Jan 2014 23:58:37 UTC +00:00], ["sign_in_count", 3], ["updated_at", Sat, 25 Jan 2014 23:58:37 UTC +00:00]]
+  [1m[36m (126.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 261ms (ActiveRecord: 128.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 00:58:37 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_user_widget.html.erb (2.0ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:37 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:37 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:37 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:37 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:38 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:38 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:38 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:38 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:38 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:38 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:38 +0100
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+Processing by AnimalsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'user') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  [1m[35mAnimal Load (0.2ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_user_widget.html.erb (0.4ms)
+Completed 200 OK in 23ms (Views: 11.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-26 00:58:44 +0100
+
+
+Started GET "/animals/2/edit" for 127.0.0.1 at 2014-01-26 00:58:49 +0100
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'user') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 2]]
+Completed 500 Internal Server Error in 18ms
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.6.10) lib/cancan/ability.rb:208:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_additions.rb:338:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:41:in `authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:26:in `load_and_authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:10:in `block in add_before_filter'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:407:in `_run__2874499065084717304__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__1490258632718652001__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/rita/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/rita/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/rita/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+
+
+Started GET "/animals/2/edit" for 127.0.0.1 at 2014-01-26 00:58:49 +0100
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'user') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 2]]
+Completed 500 Internal Server Error in 13ms
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.6.10) lib/cancan/ability.rb:208:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_additions.rb:338:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:41:in `authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:26:in `load_and_authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:10:in `block in add_before_filter'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:407:in `_run__2874499065084717304__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__1490258632718652001__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/rita/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/rita/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/rita/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/rita/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.1ms)
