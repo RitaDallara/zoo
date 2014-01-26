@@ -142,6 +142,7 @@ DEPENDENCIES
   hirb
   jbuilder (~> 1.2)
   jquery-rails
+  mime-types
   paperclip
   rails (= 4.0.1)
   rmagick

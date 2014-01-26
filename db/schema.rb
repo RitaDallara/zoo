@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140126001640) do
+ActiveRecord::Schema.define(version: 20140126214033) do
 
   create_table "animals", force: true do |t|
     t.string   "name"
@@ -23,6 +23,10 @@ ActiveRecord::Schema.define(version: 20140126001640) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "sound_file_name"
+    t.string   "sound_content_type"
+    t.integer  "sound_file_size"
+    t.datetime "sound_updated_at"
   end
 
   create_table "quizzes", force: true do |t|

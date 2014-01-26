@@ -27,6 +27,7 @@ class AnimalsController < ApplicationController
   def create
     @animal = Animal.new(animal_params)
 
+
     respond_to do |format|
       if @animal.save
         format.html { redirect_to @animal, notice: 'Animal was successfully created.' }
@@ -37,6 +38,9 @@ class AnimalsController < ApplicationController
       end
     end
   end
+
+
+
 
   # PATCH/PUT /animals/1
   # PATCH/PUT /animals/1.json
@@ -73,3 +77,4 @@ class AnimalsController < ApplicationController
       params.require(:animal).permit(:name, :avatar, :sound)
     end
 end
+
