@@ -16,7 +16,7 @@
     <% @animals.each do |animal| %>
       <tr>
         <td><%= animal.name %></td>
-        <td><%= image_tag animal.avatar.url(:thumb) %></td>
+        <td><%= animal.avatar.url(:thumb) %></td>
         <td><%= animal.sound %></td>
         <td><%= link_to 'Show', animal %></td>
         <td><%= link_to 'Edit', edit_animal_path(animal) %></td>

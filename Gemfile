@@ -39,6 +39,12 @@ gem 'cancan'
 # Prittier console output
 gem 'hirb'
 
+# File upload
+gem 'paperclip'
+
+# Image processing
+gem 'rmagick'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

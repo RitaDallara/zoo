@@ -7,7 +7,7 @@
 
 <p>
   <strong>Image:</strong>
-  <%= image_tag @animal.avatar.url(:medium) %>
+  <%= image_tag @animal.avatar.url %>
 </p>
 
 <p>
