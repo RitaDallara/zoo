@@ -11,8 +11,14 @@ class Animal < ActiveRecord::Base
 
  # has_attached_file :sound, :styles => {:ogg => ['ogg', :ogg] }, :processors => [:ogg]
  has_attached_file :sound # :styles => {:mp3 => ['mp3', :mp3] }, :processors => [:ogg]
+ 
+ #validates_attachment_presence :image
+ 
+ validates :name, :presence => :true, :uniqueness => { :case_sensitive => false }, :format => { :with => %r{\A[A-Z][a-zA-Z\s]*\z}}
+ 
+ validates_attachment_presence :avatar
 
-  validates_attachment_presence :sound
+validates_attachment_presence :sound
  
 
 validates_attachment_content_type :sound, 
