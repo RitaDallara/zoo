@@ -24,7 +24,7 @@
     <% @animals = Animal.all %>
     <% @animals.each do |animal| %>
       <tr>
-        <td><%= radio_button_tag(:animal_id, animal.id) %></td>
+        <td><%= f.radio_button(:animal_id, animal.id) %></td>
         <td><%= animal.name %></td>
         <td><%= image_tag animal.avatar.url(:thumb) %></td>
       </tr>
@@ -41,10 +41,10 @@
 
 
   <tbody>
-    <% @alternatives = Alternative.all %>
-    <% @alternatives.each do |alternative| %>
+
+    <% @animals.each do |alternative| %>
       <tr>
-        <td><%= radio_button_tag(:alternative_id, alternative.id) %></td>
+        <td><%= f.radio_button(:alternative_id, alternative.id) %></td>
         <td><%= alternative.name %></td>
         <td><%= image_tag alternative.avatar.url(:thumb) %></td>
       </tr>
@@ -55,12 +55,12 @@
   </div>
   <div class="field">
     <%= f.label :difficulty %><br>
-    <%= radio_button_tag(:difficulty, "easy") %>
-    <%= label_tag(:difficulty, "easy") %>
-    <%= radio_button_tag(:difficulty, "medium") %>
-    <%= label_tag(:difficulty, "medium") %>
-    <%= radio_button_tag(:difficulty, "hard") %>
-    <%= label_tag(:difficulty, "hard") %>
+    <%= f.radio_button(:difficulty, "easy") %>
+    <%= f.label_tag(:difficulty, "easy") %>
+    <%= f.radio_button(:difficulty, "medium") %>
+    <%= f.label_tag(:difficulty, "medium") %>
+    <%= f.radio_button(:difficulty, "hard") %>
+    <%= f.label_tag(:difficulty, "hard") %>
 
 
   </div>
