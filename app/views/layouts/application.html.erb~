@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
   <title>Zoo</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -8,13 +10,13 @@
 </head>
 <body>
 
-
-
+    <%= image_tag("zoo.jpeg") %>
+ 
 
 
   <%= yield %>
 
-  <%= render:partial => 'layouts/user_widget' %>
+  <%= render :partial => 'layouts/user_widget' %>
 
 </body>
 </html>
