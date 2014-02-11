@@ -12,12 +12,46 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :Animal %><br>
-    <%= f.text_field :animal_id %>
+    <%= f.label :Animal1 %><br>
+    <!--<%= f.text_field :animal_id %>
+    <!-- <%= f.select(:animal, Animal.all.map{|p| [p.avatar.url(:thumb)]}) %> -->
+
+
+    <table>
+
+
+  <tbody>
+    <% @animals = Animal.all %>
+    <% @animals.each do |animal| %>
+      <tr>
+        <td><%= radio_button_tag(:animal_id, animal.id) %></td>
+        <td><%= animal.name %></td>
+        <td><%= image_tag animal.avatar.url(:thumb) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
   </div>
   <div class="field">
-    <%= f.label :Animal %><br>
-    <%= f.text_field :alternative_id %>
+    <%= f.label :Animal2 %><br>
+    <!--<%= f.text_field :alternative_id %> -->
+<table>
+
+
+  <tbody>
+
+    <% @animals.each do |alternative| %>
+      <tr>
+        <td><%= radio_button_tag(:alternative_id, alternative.id) %></td>
+        <td><%= alternative.name %></td>
+        <td><%= image_tag alternative.avatar.url(:thumb) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
   </div>
   <div class="field">
     <%= f.label :difficulty %><br>
