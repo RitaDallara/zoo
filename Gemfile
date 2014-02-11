@@ -49,6 +49,10 @@ gem 'rmagick'
 
 gem 'mime-types'
 
+# autocompletion
+
+gem 'rails4-autocomplete'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

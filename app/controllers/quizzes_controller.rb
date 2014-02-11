@@ -2,6 +2,8 @@ class QuizzesController < ApplicationController
   load_and_authorize_resource
   before_action :set_quiz, only: [:show, :edit, :update, :destroy]
 
+  
+  autocomplete :animal, :animal
   # GET /quizzes
   # GET /quizzes.json
   def index
@@ -72,4 +74,5 @@ class QuizzesController < ApplicationController
     def quiz_params
       params.require(:quiz).permit(:animal_id, :alternative_id, :difficulty)
     end
+
 end
