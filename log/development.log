@@ -16946,3 +16946,460 @@ ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.pn
   Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
   Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
   Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (35.6ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (42.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.1ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["last_sign_in_at", Tue, 11 Feb 2014 12:45:56 UTC +00:00], ["current_sign_in_at", Tue, 11 Feb 2014 13:05:38 UTC +00:00], ["sign_in_count", 7], ["updated_at", Tue, 11 Feb 2014 13:05:38 UTC +00:00]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  Rendered layouts/_user_widget.html.erb (20.8ms)
+Completed 200 OK in 149ms (Views: 127.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:05:38 +0100
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+Processing by AnimalsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 1]]
+  [1m[36mAnimal Load (0.4ms)[0m  [1mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (47.3ms)
+  Rendered layouts/_user_widget.html.erb (0.2ms)
+Completed 200 OK in 89ms (Views: 54.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2014-02-11 14:06:44 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanoguerra/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanoguerra/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanoguerra/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.7ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.4ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.6ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2014-02-11 14:06:48 +0100
+Processing by AnimalsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 1]]
+  Rendered animals/_form.html.erb (42.6ms)
+  Rendered animals/new.html.erb within layouts/application (44.0ms)
+  Rendered layouts/_user_widget.html.erb (0.6ms)
+Completed 200 OK in 60ms (Views: 51.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2014-02-11 14:10:01 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#new as HTML
+Completed 500 Internal Server Error in 52ms
+
+NoMethodError (undefined method `before_sound_post_process' for #<Class:0x00000103f27688>):
+  app/models/animal.rb:14:in `<class:Animal>'
+  app/models/animal.rb:3:in `<top (required)>'
+
+
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-02-11 14:10:20 +0100
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 13ms
+
+NoMethodError (undefined method `before_sound_post_process' for #<Class:0x00000104860b28>):
+  app/models/animal.rb:14:in `<class:Animal>'
+  app/models/animal.rb:3:in `<top (required)>'
+
+
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.2ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 1]]
+  [1m[35mAnimal Load (0.2ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_user_widget.html.erb (0.9ms)
+Completed 200 OK in 211ms (Views: 119.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2014-02-11 14:11:53 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanoguerra/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanoguerra/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanoguerra/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (45.3ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (76.2ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2014-02-11 14:11:56 +0100
+Processing by AnimalsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 1]]
+  Rendered animals/_form.html.erb (15.6ms)
+  Rendered animals/new.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_user_widget.html.erb (0.7ms)
+Completed 200 OK in 34ms (Views: 25.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/animals" for 127.0.0.1 at 2014-02-11 14:12:59 +0100
+Processing by AnimalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W10CU/UKPzdfCiD23DfGezIqVqOoEJgRE9WyxNlrosU=", "animal"=>{"name"=>"mosca", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00000101b943b0 @tempfile=#<Tempfile:/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/RackMultipart20140211-13095-ocdayb>, @original_filename="Fly.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"animal[avatar]\"; filename=\"Fly.jpg\"\r\nContent-Type: image/jpeg\r\n">, "sound"=>#<ActionDispatch::Http::UploadedFile:0x00000101b9d078 @tempfile=#<Tempfile:/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/RackMultipart20140211-13095-hb5few>, @original_filename="Fly.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"animal[sound]\"; filename=\"Fly.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Animal"}
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf6.jpg[0]'
+Command :: identify -format %m '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf6.jpg[0]'
+Command :: identify -format %m '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf6.jpg[0]'
+Command :: identify -format %m '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf6.jpg[0]'
+Command :: convert '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf6.jpg[0]' -auto-orient -resize "1300x1300>" '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf620140211-13095-vhpro2'
+Command :: file -b --mime '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf620140211-13095-vhpro2'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf6.jpg[0]'
+Command :: identify -format %m '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf6.jpg[0]'
+Command :: identify -format %m '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf6.jpg[0]'
+Command :: identify -format %m '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf6.jpg[0]'
+Command :: convert '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf6.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf620140211-13095-1jo3y24'
+Command :: file -b --mime '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-1qviuf620140211-13095-1jo3y24'
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 1]]
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s8.jpg[0]'
+Command :: identify -format %m '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s8.jpg[0]'
+Command :: identify -format %m '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s8.jpg[0]'
+Command :: identify -format %m '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s8.jpg[0]'
+Command :: convert '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s8.jpg[0]' -auto-orient -resize "1300x1300>" '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s820140211-13095-fo7cjk'
+Command :: file -b --mime '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s820140211-13095-fo7cjk'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s8.jpg[0]'
+Command :: identify -format %m '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s8.jpg[0]'
+Command :: identify -format %m '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s8.jpg[0]'
+Command :: identify -format %m '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s8.jpg[0]'
+Command :: convert '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s8.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s820140211-13095-1lu5oq'
+Command :: file -b --mime '/var/folders/ly/brr4q_tx0yd8js9tdqr8yt5w0000gn/T/Fly20140211-13095-l3l3s820140211-13095-1lu5oq'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `avatar_content_type`
+Binary data inserted for `string` type on column `sound_content_type`
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "animals" ("avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "name", "sound_content_type", "sound_file_name", "sound_file_size", "sound_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["avatar_content_type", "image/jpeg"], ["avatar_file_name", "Fly.jpg"], ["avatar_file_size", 1875697], ["avatar_updated_at", Tue, 11 Feb 2014 13:13:01 UTC +00:00], ["created_at", Tue, 11 Feb 2014 13:13:03 UTC +00:00], ["name", "mosca"], ["sound_content_type", "audio/mp3"], ["sound_file_name", "Fly.mp3"], ["sound_file_size", 304379], ["sound_updated_at", Tue, 11 Feb 2014 13:13:03 UTC +00:00], ["updated_at", Tue, 11 Feb 2014 13:13:03 UTC +00:00]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/animals/7
+Completed 302 Found in 3589ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/animals/7" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mAnimal Load (0.2ms)[0m  SELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  Rendered animals/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_user_widget.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 10.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:03 +0100
+
+
+Started GET "/animals/" for 127.0.0.1 at 2014-02-11 14:13:21 +0100
+Processing by AnimalsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 1]]
+  [1m[35mAnimal Load (0.2ms)[0m  SELECT "animals".* FROM "animals"
+  Rendered animals/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_user_widget.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 44.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2014-02-11 14:13:22 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanoguerra/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanoguerra/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanoguerra/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/stefanoguerra/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (35.3ms)
