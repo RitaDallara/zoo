@@ -6,3 +6,4 @@ log/development.log
 >>>>>>> 2f4158cdac01ac168d89def66446055c980bcf7c
 *.sqlite3
 *.log
+tmp
