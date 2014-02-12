@@ -1,6 +1,9 @@
 Zoo::Application.routes.draw do
   get "pages/home"
   get "pages/about"
+  get "pages/game" => 'pages#game', :as => :startgame
+
+  # match 'home/newbill' => 'home#newbill', :as => :newbill
   devise_for :users
   resources :users
 

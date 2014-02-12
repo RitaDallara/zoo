@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <%= image_tag("zoo.jpeg") %>
+
  
 
 
