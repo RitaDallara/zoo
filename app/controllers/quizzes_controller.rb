@@ -64,6 +64,14 @@ class QuizzesController < ApplicationController
     end
   end
 
+  def prepare_game
+    @quizzes= Quiz.rand_quiz(params[:num])
+
+    #render :template => 'quizzes/prepare_game'
+    #render :nothing => true
+    #render json: @quizzes
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_quiz

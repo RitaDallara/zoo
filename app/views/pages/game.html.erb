@@ -1,1 +1,21 @@
 <h1>INIZIA LA PARTITA!</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Animal</th>
+      <th>Alternative</th>
+      <th>Difficulty</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @game_quizzes.each do |quiz| %>
+      <tr>
+        <td><%= quiz.animal_id %></td>
+        <td><%= quiz.alternative_id %></td>
+        <td><%= quiz.difficulty %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
