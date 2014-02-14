@@ -59,6 +59,14 @@ class AnimalsController < ApplicationController
   # DELETE /animals/1
   # DELETE /animals/1.json
   def destroy
+    @quiz=Quiz.where(animal_id: @animal.id)
+    @quiz2=Quiz.where(alternative_id:  @animal.id)
+    @quiz.each do |q|
+      q.destroy
+    end
+    @quiz2.each do |p|
+      p.destroy
+    end
     @animal.destroy
     respond_to do |format|
       format.html { redirect_to animals_url }
