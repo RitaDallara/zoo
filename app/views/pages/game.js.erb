@@ -1,57 +1,17 @@
    $(function() {
           $('#disappear').fadeOut();
-          //$('#space').text(JSON.stringify(myJson));pages/game"
-          //alert("blabla");
                 var num= <%= @num_quiz  %>;
                 alert(num);
-		$.getJSON( "quizzes/prepare_game?num="+num, function( json ) {
+		$.getJSON( "quizzes/prepare_game?num="+num, function( data ) {
 		var items = [];
-                //alert(data[0].animal.name); 
-		//var obj = JSON.parse(data);
-                //alert(obj);
-                for(i= 0; i < data.length; i++)
-                {
-    			var quiz = json[i];
-			var quiz_id= quiz.id;
-			var quiz_diff= quiz.difficulty;
-
-			//var animal_name= quiz.animal.name;
-			//var alternative_name= quiz.alternative.new;
-
-			alert(quiz_id);
-			alert(quiz_diff);
-			//alert(animal_name);
-			//alert(alternative_name);
-
-			//var latitude= json.results[0].geometry.location.lat;
-			
-			//alert(obj[i].id);
-			//alert(obj[i].difficulty);
-			//alert(obj[i].animal.name);
-			//alert(obj[i].alternative.name);
-    			//for (var property in object) {
-				//if ( property == "id" || property == "difficulty")
-					//a7lert('item ' + i + ': ' + property + '=' + object[property]);
-				//else	
-				{
-					//alert(property);
-				//	alert("ehiiii");
-				//	alert(property.name);
-					//for (var x in property)
-						//alert('item' + property + ' ' + x '=' property[x]);
-				}
-				//else
-     				//alert('item ' + i + ': ' + property + '=' + object[property]);
-    			}
-		}/*
-		$.each( data, function( id, difficulty, animal, alternative ) {
-		items.push( "<li id='" + difficulty + "'>" + animal + "</li>" );
+		$.each( data, function( key, val) {
+		items.push( "<li id='" + key + "'>" + val + "</li>" );
 		});
 		$( "<ul/>", {
 		"class": "my-new-list",
 		html: items.join( "" )
 		}).appendTo( "body" );
-		})*/;
+		});
           //$.getJSON("quizzes
           return false;
         })

@@ -15,13 +15,13 @@
 			var quiz_id= quiz.id;
 			var quiz_diff= quiz.difficulty;
 
-			var animal_name= quiz.animal.name;
-			var alternative_name= quiz.alternative.new;
+			//var animal_name= quiz.animal.name;
+			//var alternative_name= quiz.alternative.new;
 
 			alert(quiz_id);
 			alert(quiz_diff);
-			alert(animal_name);
-			alert(alternative_name);
+			//alert(animal_name);
+			//alert(alternative_name);
 
 			//var latitude= json.results[0].geometry.location.lat;
 			
