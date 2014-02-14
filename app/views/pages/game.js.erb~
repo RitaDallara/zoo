@@ -1,57 +1,48 @@
-   $(function() {
-          $('#disappear').fadeOut();
-          //$('#space').text(JSON.stringify(myJson));pages/game"
-          //alert("blabla");
+$(function() 
+{
+	var animal_names = new Array();
+	var alternative_names = new Array();
+	var animal_image_urls = new Array();
+	var alternative_image_urls = new Array();
+	var sounds = new Array();
+	var answers = new Array();
+	var choice;
+        var items = [];
+        $('#disappear').fadeOut();
                 var num= <%= @num_quiz  %>;
                 alert(num);
-		$.getJSON( "quizzes/prepare_game?num="+num, function( json ) {
-		var items = [];
-                //alert(data[0].animal.name); 
-		//var obj = JSON.parse(data);
-                //alert(obj);
-                for(i= 0; i < data.length; i++)
-                {
-    			var quiz = json[i];
-			var quiz_id= quiz.id;
-			var quiz_diff= quiz.difficulty;
-
-			//var animal_name= quiz.animal.name;
-			//var alternative_name= quiz.alternative.new;
-
-			alert(quiz_id);
-			alert(quiz_diff);
-			//alert(animal_name);
-			//alert(alternative_name);
-
-			//var latitude= json.results[0].geometry.location.lat;
+		$.getJSON( "quizzes/prepare_game?num="+num, function( data )
+		{
 			
-			//alert(obj[i].id);
-			//alert(obj[i].difficulty);
-			//alert(obj[i].animal.name);
-			//alert(obj[i].alternative.name);
-    			//for (var property in object) {
-				//if ( property == "id" || property == "difficulty")
-					//a7lert('item ' + i + ': ' + property + '=' + object[property]);
-				//else	
-				{
-					//alert(property);
-				//	alert("ehiiii");
-				//	alert(property.name);
-					//for (var x in property)
-						//alert('item' + property + ' ' + x '=' property[x]);
-				}
-				//else
-     				//alert('item ' + i + ': ' + property + '=' + object[property]);
-    			}
-		}/*
-		$.each( data, function( id, difficulty, animal, alternative ) {
-		items.push( "<li id='" + difficulty + "'>" + animal + "</li>" );
-		});
-		$( "<ul/>", {
-		"class": "my-new-list",
-		html: items.join( "" )
-		}).appendTo( "body" );
-		})*/;
-          //$.getJSON("quizzes
+			$.each( data, function( key, val) 
+			{
+				animal_names.push(val.animal.name);
+				alternative_names.push(val.alternative.name);
+				animal_image_urls.push(val.animal.avatar);
+				alternative_image_urls.push(val.alternative.avatar);
+				
+				choice = Math.floor(Math.random()*2) +1;
+
+				if(choice == 1)
+					sounds.push(val.animal.sound);
+				else
+					sounds.push(val.alternative.sound);
+				
+				answers.push(choice);
+								
+			});
+
+	
+			var i;
+			for(i=0; i < animal_names.length; i++)
+			{
+				items.push( "<li id='" + i + "'>" + animal_names[i] + "</li>" );
+			}
+		
+		        $( "<ul/>", {"class": "my-new-list", html: items.join( "" )}).appendTo( "body" );
+	
+	  });	
+	  
+          	
           return false;
-        })
+})
