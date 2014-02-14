@@ -1,4 +1,18 @@
 <h1>INDOVINA ZOO</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
-<%= link_to "Start game", startgame_path %>
+
+<%= form_tag({controller: "pages", action: "game"}, method: "get", :remote => true, :id => "disappear") %>
+
+  <div class="field">
+    <%= radio_button_tag(:num, "1") %>
+    <%= label_tag("1") %>
+    <%= radio_button_tag(:num, "2") %>
+    <%= label_tag("2") %>
+    <%= submit_tag("Start game") %>
+
+  </div>
+
+
+
+

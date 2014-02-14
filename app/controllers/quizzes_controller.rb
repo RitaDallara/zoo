@@ -64,6 +64,14 @@ class QuizzesController < ApplicationController
     end
   end
 
+  def prepare_game
+    @quizzes= Quiz.rand_quiz(params[:num])
+
+    #render :template => 'quizzes/prepare_game'
+    #render :nothing => true
+    #render json: @quizzes
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_quiz
@@ -72,7 +80,8 @@ class QuizzesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def quiz_params
-      params.require(:quiz).permit(:animal_id, :alternative_id, :difficulty)
+      #params.require(:quiz).permit(:animal_id, :alternative_id, :difficulty)
+      params.fetch(:quiz,{}).permit(:animal_id, :alternative_id, :difficulty)
     end
 
 end

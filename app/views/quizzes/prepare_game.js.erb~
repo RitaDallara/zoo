@@ -1,0 +1,8 @@
+   $(function() {
+          $('#disappear').fadeOut();
+          //$('#space').text(JSON.stringify(myJson));
+          //alert("blabla");
+          //$.getJSON("quizzes
+          return false;
+        })
+      

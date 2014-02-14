@@ -8,12 +8,15 @@ class Ability
 
           if user.has_role? :admin
             can :manage, :all
+            cannot :create, User
           else
             if user.has_role? :user
-              can :read, :all
-            else
+              can :read, Quiz 
+              cannot :read, User
+              cannot :destroy, :all
+         #   else
 	      #guest user
-	      can :read, Quiz
+	     #can :read, Quiz
             end
           end
      

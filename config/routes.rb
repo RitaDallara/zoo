@@ -1,7 +1,10 @@
 Zoo::Application.routes.draw do
   get "pages/home"
   get "pages/about"
-  get "pages/game" => 'pages#game', :as => :startgame
+  get "pages/game" => 'pages#game', :as => :gamestart
+  #get "quizzes/prepare_game" => 'quizzes#prepare_game', :as => :startgame
+  get "quizzes/prepare_game", :defaults => { :format => 'json' }
+  get "pages/game"
 
   # match 'home/newbill' => 'home#newbill', :as => :newbill
   devise_for :users
