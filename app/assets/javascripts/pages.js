@@ -64,6 +64,26 @@ i=0;
 $('#animal').append('<img src="'+animal_image_urls[i]+'" style="max-height: 300px;" >');
 $('#alternative').append('<img src="'+alternative_image_urls[i]+'" style="max-height: 300px;" >');
 $('#sound').append('<audio autoplay controls'+">"+'<source src="'+sounds[i]+'"/></audio>');
+
+var seconds = 10;
+function mytimer()
+{
+	if(seconds === -1)
+	{
+		//seconds= 10;
+		//clearInterval(timer);
+		user_answers[i]= false;
+		$('#next').click();
+	}
+	document.getElementById("div_timer").innerHTML = seconds; // this is the same as $("div_timer").html(timer) in       jquery.
+	//$('#div_timer').html(timer);
+	seconds--;
+
+
+} 
+var timer = setInterval(function(){mytimer()},1000);
+
+
 //alert(i);
 //alert("length vale" + animal_names.length);
 
@@ -76,6 +96,8 @@ else
 $(answers[0]).click( function() {
 	score++;
 	user_answers[0] = true;
+	//clearInterval(timer);
+	//seconds= 10;
 	//scatenare evento click su next
 	//i++;
 	$( '#next' ).click();
@@ -83,6 +105,8 @@ $(answers[0]).click( function() {
 $(other).click( function() {
 	//scatenare evento click su next
 	user_answers[0] = false;
+	//clearInterval(timer);
+	//seconds= 10;
 	//i++;
 	$( '#next' ).click();
 });
@@ -90,20 +114,26 @@ $(other).click( function() {
 
 $( "#next" ).click( function() {
 	i++;
+	seconds= 10;
+	clearInterval(timer);
 	$('#animal').unbind();
 	$('#alternative').unbind();
 	$('#animal').empty();
 	$('#alternative').empty();
 	$('#sound').empty();
+	
 	//alert(i);
 	if(i<animal_names.length)
 	{
   		//alert("SONO IN CICLO CASO i < length");
+		document.getElementById("div_timer").innerHTML = seconds;
+		timer = setInterval(function(){mytimer()},1000);
 		$('#animal').append('<img src="'+animal_image_urls[i]+'" style="max-height: 300px;" >');
 		$('#alternative').append('<img src="'+alternative_image_urls[i]+'" style="max-height: 300px;" >');
 		//alert(sounds[i]);
 		$('#sound').append('<audio autoplay controls'+">"+'<source src="'+sounds[i]+'"/></audio>');
 		
+
 		if(answers[i] === '#animal')
 			other = '#alternative';
 		else
@@ -112,6 +142,8 @@ $( "#next" ).click( function() {
 		$(answers[i]).click( function() {
 			score++;
 			user_answers[i] = true;
+			//seconds= 10;
+			//clearInterval(timer);
 			//scatenare evento click su next
 			//i++;
 			$( '#next' ).click();
@@ -119,6 +151,8 @@ $( "#next" ).click( function() {
 		$(other).click( function() {
 			//scatenare evento click su next
 			user_answers[i] = false;
+			//seconds= 10;
+			//clearInterval(timer);
 			//i++;
 			$( '#next' ).click();
 		});
@@ -127,8 +161,27 @@ $( "#next" ).click( function() {
 	{
 		//game ended
 		$('#next').fadeOut();
+		$('#div_timer').fadeOut();
+		$('#game').text("FINE!");
 		//alert(other);
 		$('#animal').append('<p>'+score+'</p>');
+		for(i=0; i<animal_names.length; i++)
+		{
+			$('#container').append('<div id="quiz'+i+'"></div>');
+			var quiz_id= "#quiz" + i;
+			$(quiz_id).append('<span><img src="'+animal_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
+			$(quiz_id).append('<span><img src="'+alternative_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
+			var answer_validity_url;
+			if(user_answers[i] === true)
+				answer_validity_url= "/assets/tick.jpg";
+			else
+				answer_validity_url= "/assets/cross.jpg";
+		
+			//$(quiz_id).append('<span>'+user_answers[i]+'</span>');
+			$(quiz_id).append('<span><img src="'+answer_validity_url+'" style="max-width: 20px; max-height: 20px;" ></span>');
+		}
+
+		//$('#container').append(
 	}
 });
 
