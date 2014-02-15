@@ -10,6 +10,7 @@
 </head>
 <body>
 
+  <%= image_tag "img.jpeg" %>
 
  
 
@@ -19,5 +20,3 @@
   <%= render :partial => 'layouts/user_widget' %>
 </body>
 </html>
-
-<% end %>
