@@ -1,28 +1,3 @@
+<h1 id='game'>INIZIA LA PARTITA!</h1>
 
 
-
-
-<h1>INIZIA LA PARTITA!</h1>
-<script type="text/javascript">
-   $(document).ready (function() {
-          //$('#disappear').fadeOut();
-                var num= <%= @num_quiz  %>;
-                alert(num);
-		$.getJSON( "quizzes/prepare_game?num="+num, function( data ) {
-		var items = [];
-		$.each( data, function( key, val) {
-		items.push( "<li id='" + key + "'>" + val + "</li>" );
-		});
-		alert(items);
-		$( "<ul/>", {
-		"class": "my-new-list",
-		html: items.join( "" )
-		}).appendTo( "body" );
-		});
-          //$.getJSON("quizzes
-          return false;
-        })
-</script>
-<table>
-
-</table>
