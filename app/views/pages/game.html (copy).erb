@@ -5,7 +5,7 @@
 <h1>INIZIA LA PARTITA!</h1>
 <script type="text/javascript">
    $(document).ready (function() {
-          //$('#disappear').fadeOut();
+          $('#disappear').fadeOut();
                 var num= <%= @num_quiz  %>;
                 alert(num);
 		$.getJSON( "quizzes/prepare_game?num="+num, function( data ) {
@@ -13,7 +13,6 @@
 		$.each( data, function( key, val) {
 		items.push( "<li id='" + key + "'>" + val + "</li>" );
 		});
-		alert(items);
 		$( "<ul/>", {
 		"class": "my-new-list",
 		html: items.join( "" )
@@ -24,5 +23,21 @@
         })
 </script>
 <table>
+  <thead>
+    <tr>
+      <th>Animal</th>
+      <th>Alternative</th>
+      <th>Difficulty</th>
+    </tr>
+  </thead>
 
+  <tbody>
+    <% @game_quizzes.each do |quiz| %>
+      <tr>
+        <td><%= quiz.animal_id %></td>
+        <td><%= quiz.alternative_id %></td>
+        <td><%= quiz.difficulty %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>

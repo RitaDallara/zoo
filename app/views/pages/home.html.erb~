@@ -10,7 +10,7 @@
     <%= radio_button_tag(:num, "2") %>
     <%= label_tag("2") %>
     <%= submit_tag("Start game") %>
-<% end %>
+
   </div>
 
 
