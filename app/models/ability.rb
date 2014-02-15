@@ -11,9 +11,12 @@ class Ability
             cannot :create, User
           else
             if user.has_role? :user
-              can :read, Quiz 
+              can :manage, Quiz 
+	      can :read, Animal
               cannot :read, User
               cannot :destroy, :all
+              cannot :edit, :all
+              cannot :create, :all
          #   else
 	      #guest user
 	     #can :read, Quiz
