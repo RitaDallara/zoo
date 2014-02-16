@@ -1,0 +1,14 @@
+#p_CSS {
+
+  background-image: url('indovina_zoo.png');
+}
+
+#title_zoo
+{
+	color:yellow; 
+	font-size:800%;     
+	text-shadow: -1px -1px 10px #000; 
+	font-family : "mpact","Charcoal","fantasy";
+}
+
+
