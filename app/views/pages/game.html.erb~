@@ -1,6 +1,6 @@
 <h1 id='game'>GIOCA!</h1>
 
-<div id="div_timer"></div>
+<div id='div_timer'></div>
 <div id='container'>
 <span id='animal'></span>
 <span id='sound'></span>

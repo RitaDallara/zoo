@@ -1,4 +1,31 @@
 class User < ActiveRecord::Base
 
+  after_create :assign_default_role
+
+    def assign_default_role
+      add_role(:user)
+    end
+
+    def update_max_score(diff,score)
+	    #space after ref_score is necessary, this way it points exactly to current_user.max_whatever
+	    #otherwise it's just assigned the same value but it's a different object
+	    #@ref_score = self.max_easy if diff == "easy"
+	    #@ref_score = self.max_medium if diff == "medium"
+	    #@ref_score = self.max_hard if diff == "hard"
+            #puts @ref_score
+	    #if score.to_i > @ref_score.to_i
+	    #  @ref_score= score.to_i
+	    #end
+            #puts @ref_score
+            puts self.max_easy
+            if score.to_i > self.max_easy
+              self.max_easy= score.to_i
+            end
+            puts "ora max_easy vale"
+            puts self.max_easy
+    end
+
+	rolify
+
 	devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
 end
