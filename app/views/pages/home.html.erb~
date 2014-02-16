@@ -8,10 +8,17 @@
     <%= label_tag("1") %>
     <%= radio_button_tag(:num, "3") %>
     <%= label_tag("3") %>
-    <%= submit_tag("Start game") %>
-
   </div>
 
+  <div class="field">
+    <%= radio_button_tag(:diff, "easy") %>
+    <%= label_tag("Easy") %>
+    <%= radio_button_tag(:diff, "medium") %>
+    <%= label_tag("Medium") %>
+    <%= radio_button_tag(:diff, "hard") %>
+    <%= label_tag("Hard") %>
+  </div>
+<%= submit_tag("Start game") %>
 
 
 

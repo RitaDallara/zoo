@@ -99,20 +99,18 @@ input[type=submit] {
 {
         margin: -20px -20px 21px;
   	line-height: 40px;
-  	font-size: 15px;
+  	font-size: 18px;
   	font-weight: bold;
-  	color: #555;
+  	color: #2c3342;
   	text-align: center;
-  	text-shadow: 0 1px white;
-  	background: #0000ff;
+  	background: #59c3e2;
   	border-bottom: 1px solid #cfcfcf;
   	border-radius: 3px 3px 0 0;
   	background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
   	background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
   	background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
   	background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
-  	-webkit-box-shadow: 0 1px whitesmoke;
-  	box-shadow: 0 1px whitesmoke;
+  
 }
 
 
@@ -147,4 +145,39 @@ background: -moz-linear-gradient(19% 75% 90deg,#ededed, #fbfbfb);
 -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
 -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
 color: #444;
+}
+
+
+
+input[type=checkbox],
+input[type=radio] {
+border: 1px solid #c0c0c0;
+margin: 0 0.1em 0 0;
+padding: 0;
+font-size: 16px;
+line-height: 1em;
+width: 1.25em;
+height: 1.25em;
+background: #fff;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ededed), to(#fbfbfb));
+ 
+-webkit-appearance: none;
+-webkit-box-shadow: 1px 1px 1px #fff;
+-webkit-border-radius: 0.25em;
+vertical-align: text-top;
+display: inline-block;
+ 
+}
+ 
+input[type=radio] {
+-webkit-border-radius: 2em; /* Make radios round */
+}
+ 
+input[type=checkbox]:checked::after {
+content:"âœ”";
+display:block;
+text-align: center;
+font-size: 16px;
+height: 16px;
+line-height: 18px;
 }

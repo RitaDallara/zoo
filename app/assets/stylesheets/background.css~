@@ -1,4 +1,5 @@
-#p_CSS {
+#p_CSS 
+{
 
   background-image: url('indovina_zoo.png');
 }
@@ -11,6 +12,10 @@
 	font-family : "mpact","Charcoal","fantasy";
 }
 
-.game_figure
+#user_widget
 {
-	
+	margin: 0px;
+	text-align: right;
+}
+
+
