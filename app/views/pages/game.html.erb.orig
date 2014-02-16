@@ -1,34 +1,27 @@
+<h1 id='game'>GIOCA!</h1>
+
+<div id='div_timer'></div>
 <<<<<<< HEAD
 
-
-
-
-<h1>INIZIA LA PARTITA!</h1>
-<script type="text/javascript">
-   $(document).ready (function() {
-          //$('#disappear').fadeOut();
-                var num= <%= @num_quiz  %>;
-                alert(num);
-		$.getJSON( "quizzes/prepare_game?num="+num, function( data ) {
-		var items = [];
-		$.each( data, function( key, val) {
-		items.push( "<li id='" + key + "'>" + val + "</li>" );
-		});
-		alert(items);
-		$( "<ul/>", {
-		"class": "my-new-list",
-		html: items.join( "" )
-		}).appendTo( "body" );
-		});
-          //$.getJSON("quizzes
-          return false;
-        })
-</script>
+<div id='container'>
+	<span id='animal'></span>
+	<span id='sound'></span>
+	<span id='alternative'></span>
+=======
+<div id='container' align='center'>
 <table>
 
+<tr><td class="game_figure"><span id='animal'></span></td>
+<td id="game_sound"><span id='sound'></span></td>
+<td class="game_figure"><span id='alternative'></span></td> 
+
+</tr>
 </table>
-=======
-<h1 id='game'>INIZIA LA PARTITA!</h1>
 
 
->>>>>>> b122b27b3eae94957d440a490de9db4651b06763
+>>>>>>> 2659b66969b509506c74d0fd55fa4fec9b82eff8
+</div>
+
+
+<button type='button' id='next'>Skip</button>
+
