@@ -16,10 +16,11 @@ console.log("fuck javascript!");
         var items = [];
         $('#disappear').fadeOut();
 
-		diff= "easy";
-		n_quiz= location.search.substr(1).split("&")[1].split("=")[1];
+		//diff= "easy";
+		n_quiz= location.search.substr(1).split("&")[0].split("=")[1];
+		diff= location.search.substr(1).split("&")[1].split("=")[1];
 
-$.getJSON( "quizzes/prepare_game?num="+n_quiz, function( data )
+$.getJSON( "quizzes/prepare_game?num="+n_quiz+"&diff="+diff, function( data )
 {
 
 $.each( data, function( key, val)
