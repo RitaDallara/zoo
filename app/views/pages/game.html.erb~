@@ -2,9 +2,16 @@
 
 <div id='div_timer'></div>
 <div id='container'>
-<span id='animal'></span>
-<span id='sound'></span>
-<span id='alternative'></span>
+<table>
+
+<tr><td class="game_figure"><span id='animal'></span></td>
+<td id="game_sound"><span id='sound'></span></td>
+<td class="game_figure"><span id='alternative'></span></td> 
+
+</tr>
+</table>
+
+
 </div>
 
 <button type='button' id='next'>Skip</button>

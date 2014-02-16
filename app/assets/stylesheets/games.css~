@@ -1,0 +1,4 @@
+td.game_figure
+{
+	border: 100% solid black;
+}
