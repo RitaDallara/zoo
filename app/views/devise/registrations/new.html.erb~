@@ -1,5 +1,5 @@
 
-<div class="container_sign">
+
 <div  class="div_sign" >
 <h2 class="h2_sign">Sign up</h2>
 
@@ -20,13 +20,17 @@
   <div class="div_field_sign"><br />
   <%= f.text_field :username, placeholder: 'Username' %></div>
 
+</div>
+
   <div class="div_submit"><%= f.submit "Sign up" %></div>
 <% end %>
 
-</div>
 
-</div>
 
-</div>
 
-<%= render "devise/shared/links" %>
+
+
+
+
+
+
