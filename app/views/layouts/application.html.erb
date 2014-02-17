@@ -3,20 +3,24 @@
 <head>
 
 
-  <title>Zoo</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "image_plugin", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+  	<title>Zoo</title>
+  	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  	<%= javascript_include_tag "application", "image_plugin", "data-turbolinks-track" => true %>
+  	<%= csrf_meta_tags %>
 </head>
-<body>
+<body id='p_CSS'>
 
-  <%= image_tag "logo.png" %>
+  	<div id="user_widget"><%= render :partial => 'layouts/user_widget' %></div>
+
+	<div><h1 id="title_zoo" align="center"> Indovina Zoo </h1></div>
+
+
 
  
 
 
-  <%= yield %>
+  	<%= yield %>
 
-  <%= render :partial => 'layouts/user_widget' %>
+
 </body>
 </html>

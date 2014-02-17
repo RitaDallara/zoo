@@ -1,16 +1,48 @@
-<h1>INDOVINA ZOO</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
 
-<%= form_tag("pages/game", method: "get", :id => "disappear") %>
+<div> <p  class="testo">Help</p></div>
+<p> </p>
+<p> </p>
 
-  <div class="field">
-    <%= radio_button_tag(:num, "1") %>
-    <%= label_tag("1") %>
-    <%= radio_button_tag(:num, "3") %>
-    <%= label_tag("3") %>
-    <%= submit_tag("Start game") %>
+<div class="parameters_choice">
 
+    
+<form action="pages/game" method="get" id="disappear">
+
+  <p class="legend">How many quizzes do you want to play?</p>
+  <p>            
+    <input type = "radio" class="home_radio" name = "num" value = "1" required />
+    <label >1</label>
+
+    <input type = "radio" class="home_radio" name = "num" value = "3" required />
+    <label >3</label>
+
+    <input type = "radio" class="home_radio" name = "num" value = "5" required />
+    <label >5</label>
+  </p>
+      
+
+  <p class="legend">How much do you know about animals?</p>
+  <p>            
+    <input type = "radio" class="home_radio" name = "diff" value = "easy" required />
+    <label >Animals?</label>
+
+    <input type = "radio" class="home_radio" name = "diff" value = "medium" required />
+    <label >I like cats!</label>
+
+    <input type = "radio" class="home_radio" name = "diff" value = "hard" required />
+    <label >Roar!</label>
+  </p>
+
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div>
+  <input type="submit" id="start-game-button" value="Start game"/>
   </div>
+</form>
+
+</div>
+
 
 
 

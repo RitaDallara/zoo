@@ -15,8 +15,8 @@
   <tbody>
     <% @quizzes.each do |quiz| %>
       <tr>
-        <td><%= quiz.animal_id %></td>
-        <td><%= quiz.alternative_id %></td>
+        <td><%= Animal.find(quiz.animal_id).name %></td>
+        <td><%= Animal.find(quiz.alternative_id).name %></td>
         <td><%= quiz.difficulty %></td>
         <td><%= link_to 'Show', quiz %></td>
         <td><%= link_to 'Edit', edit_quiz_path(quiz) %></td>

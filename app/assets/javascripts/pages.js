@@ -1,15 +1,5 @@
 $(document).ready(function()
-{ //var n_quiz;
-/*if ($('h1#home').length){
-	alert("HOME");
-	$("#disappear").bind('submit', function() {
-	 alert("SUBMITTED");
-         n_quiz= $("input[type='radio'][name='num']:checked").val();
-	alert(n_quiz);
-
-   });
-}*/
-
+{ 
 
 
 
@@ -25,14 +15,12 @@ var choice;
 console.log("fuck javascript!");
         var items = [];
         $('#disappear').fadeOut();
-                //var num= <%= @num_quiz %>;
-		//<% if !@num_quiz.nil? %>
-		//var n_quiz= <%= @num_quiz %>;
-		//<% end %>
-		//var num= 2;
-		n_quiz= location.search.substr(1).split("&")[1].split("=")[1];
-                //alert(n_quiz);
-$.getJSON( "quizzes/prepare_game?num="+n_quiz, function( data )
+
+		//diff= "easy";
+		n_quiz= location.search.substr(1).split("&")[0].split("=")[1];
+		diff= location.search.substr(1).split("&")[1].split("=")[1];
+
+$.getJSON( "quizzes/prepare_game?num="+n_quiz+"&diff="+diff, function( data )
 {
 
 $.each( data, function( key, val)
@@ -55,7 +43,7 @@ else
 	answers.push('#alternative');
 }
 
-//answers.push(choice);
+
 
 });
 var i;
@@ -70,13 +58,12 @@ function mytimer()
 {
 	if(seconds === -1)
 	{
-		//seconds= 10;
-		//clearInterval(timer);
+
 		user_answers[i]= false;
 		$('#next').click();
 	}
-	document.getElementById("div_timer").innerHTML = seconds; // this is the same as $("div_timer").html(timer) in       jquery.
-	//$('#div_timer').html(timer);
+	document.getElementById("div_timer").innerHTML = seconds;
+
 	seconds--;
 
 
@@ -84,8 +71,7 @@ function mytimer()
 var timer = setInterval(function(){mytimer()},1000);
 
 
-//alert(i);
-//alert("length vale" + animal_names.length);
+
 
 
 if(answers[0] === '#animal')
@@ -96,18 +82,15 @@ else
 $(answers[0]).click( function() {
 	score++;
 	user_answers[0] = true;
-	//clearInterval(timer);
-	//seconds= 10;
+
 	//scatenare evento click su next
-	//i++;
+
 	$( '#next' ).click();
 });
 $(other).click( function() {
 	//scatenare evento click su next
 	user_answers[0] = false;
-	//clearInterval(timer);
-	//seconds= 10;
-	//i++;
+
 	$( '#next' ).click();
 });
 
@@ -122,15 +105,17 @@ $( "#next" ).click( function() {
 	$('#alternative').empty();
 	$('#sound').empty();
 	
-	//alert(i);
+
 	if(i<animal_names.length)
 	{
-  		//alert("SONO IN CICLO CASO i < length");
+		
+		
 		document.getElementById("div_timer").innerHTML = seconds;
+
 		timer = setInterval(function(){mytimer()},1000);
 		$('#animal').append('<img src="'+animal_image_urls[i]+'" style="max-height: 300px;" >');
 		$('#alternative').append('<img src="'+alternative_image_urls[i]+'" style="max-height: 300px;" >');
-		//alert(sounds[i]);
+
 		$('#sound').append('<audio autoplay controls'+">"+'<source src="'+sounds[i]+'"/></audio>');
 		
 
@@ -142,18 +127,15 @@ $( "#next" ).click( function() {
 		$(answers[i]).click( function() {
 			score++;
 			user_answers[i] = true;
-			//seconds= 10;
-			//clearInterval(timer);
+
 			//scatenare evento click su next
-			//i++;
+
 			$( '#next' ).click();
 		});
 		$(other).click( function() {
 			//scatenare evento click su next
 			user_answers[i] = false;
-			//seconds= 10;
-			//clearInterval(timer);
-			//i++;
+
 			$( '#next' ).click();
 		});
 	}
@@ -163,7 +145,7 @@ $( "#next" ).click( function() {
 		$('#next').fadeOut();
 		$('#div_timer').fadeOut();
 		$('#game').text("FINE!");
-		//alert(other);
+
 		$('#animal').append('<p>'+score+'</p>');
 		for(i=0; i<animal_names.length; i++)
 		{
@@ -177,25 +159,12 @@ $( "#next" ).click( function() {
 			else
 				answer_validity_url= "/assets/cross.jpg";
 		
-			//$(quiz_id).append('<span>'+user_answers[i]+'</span>');
 			$(quiz_id).append('<span><img src="'+answer_validity_url+'" style="max-width: 20px; max-height: 20px;" ></span>');
 		}
-
-		//$('#container').append(
+		$(document.body).append('<form method="get" action="ranking">'+'<input type="hidden" name="score" value="'+score+'"><input type="hidden" name="diff" value="'+diff+'">'+'<input type="submit" value="Ranking">'+'</form>');
 	}
 });
 
-/*
-for(i=0; i<animal_names.length; i++)
-{
-	$('#animal').append('<img src="'+animal_image_urls[0]+'" style="max-height: 300px;" >');
-	$('#alternative').append('<img src="'+alternative_image_urls[0]+'" style="max-height: 300px;" >');
-	huhuhu
-}*/
-//items.push( "<li id='" + i + "'>" + animal_names[i] + "</li>" );
-
-
-//$( "<ul/>", {"class": "my-new-list", html: items.join( "" )}).appendTo( "body" );
 
 });
 
