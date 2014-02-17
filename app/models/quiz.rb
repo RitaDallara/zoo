@@ -10,6 +10,7 @@ class Quiz < ActiveRecord::Base
     Quiz.where(id: Quiz.where(difficulty: diff).pluck(:id).sample(num.to_i))
   end
 
+  validate :validate_animal
   def validate_animal 
        if animal_id.nil? 
          errors[:base] << "Please specify the first animal" 
@@ -17,18 +18,22 @@ class Quiz < ActiveRecord::Base
   end
 
   validate :cross_quiz
-
+  #validate :cross_quiz, :on => :update
+  
+  
+  #def cross_quiz
+  #    if ((Quiz.where(animal_id: animal_id)).count>0 && (Quiz.where(alternative_id: alternative_id)).count>0) || ((Quiz.where(alternative_id: animal_id)).count>0 && (Quiz.where(animal_id: alternative_id)).count>0)
+	#errors[:base] << "Quiz already existing"
+    #  end
+  #end
+  
   def cross_quiz
-    if self.id.nil?
-      if ((Quiz.where(animal_id: animal_id)).count>0 && (Quiz.where(alternative_id: alternative_id)).count>0) || ((Quiz.where(alternative_id: animal_id)).count>0 && (Quiz.where(animal_id: alternative_id)).count>0)
-	errors[:base] << "Quiz already existing"
+    straight_dups = Quiz.where(animal_id: animal_id, alternative_id: alternative_id)
+    cross_dups = Quiz.where(alternative_id: animal_id, animal_id: alternative_id)
+      if (straight_dups.count>0 || cross_dups.count>0)
+	errors[:base] << "Quiz already existing" unless (straight_dups.where(id: self.id).count>0 || cross_dups.where(id: self.id).count>0)
       end
-    else
-      if ((Quiz.where(animal_id: animal_id)).where("id != ?",self.id).count>0 && (Quiz.where(alternative_id: alternative_id)).where("id != ?",self.id).count>0) || ((Quiz.where(alternative_id: animal_id)).where("id != ?",self.id).count>0 && (Quiz.where(animal_id: alternative_id)).where("id != ?",self.id).count>0)
-	errors[:base] << "Quiz already existing"
-      end
-    end
-  end 
+  end
 
  validate :validate_alternative 
 

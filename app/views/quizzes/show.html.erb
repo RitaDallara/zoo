@@ -2,12 +2,12 @@
 
 <p>
   <strong>Animal:</strong>
-  <%= @quiz.animal_id %>
+  <%= Animal.find(@quiz.animal_id).name %>
 </p>
 
 <p>
   <strong>Alternative:</strong>
-  <%= @quiz.alternative_id %>
+  <%= Animal.find(@quiz.alternative_id).name %>
 </p>
 
 <p>
