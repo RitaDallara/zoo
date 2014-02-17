@@ -19,8 +19,14 @@ class Quiz < ActiveRecord::Base
   validate :cross_quiz
 
   def cross_quiz
-    if ((Quiz.where(animal_id: animal_id)).count>0 && (Quiz.where(alternative_id: alternative_id)).count>0) || ((Quiz.where(alternative_id: animal_id)).count>0 && (Quiz.where(animal_id: alternative_id)).count>0)
-      errors[:base] << "Quiz already existing"
+    if self.id.nil?
+      if ((Quiz.where(animal_id: animal_id)).count>0 && (Quiz.where(alternative_id: alternative_id)).count>0) || ((Quiz.where(alternative_id: animal_id)).count>0 && (Quiz.where(animal_id: alternative_id)).count>0)
+	errors[:base] << "Quiz already existing"
+      end
+    else
+      if ((Quiz.where(animal_id: animal_id)).where("id != ?",self.id).count>0 && (Quiz.where(alternative_id: alternative_id)).where("id != ?",self.id).count>0) || ((Quiz.where(alternative_id: animal_id)).where("id != ?",self.id).count>0 && (Quiz.where(animal_id: alternative_id)).where("id != ?",self.id).count>0)
+	errors[:base] << "Quiz already existing"
+      end
     end
   end 
 

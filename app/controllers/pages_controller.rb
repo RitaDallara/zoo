@@ -17,7 +17,8 @@ class PagesController < ApplicationController
     #current_user.save!
     #current_user.save!
     
-    @top_users = User.order("max_#{params[:diff]}").first(5)
+    @top_users = User.find_best("max_#{params[:diff]}")
+    #User.order("max_#{params[:diff]}").reverse.first(5)
 
 
   end
