@@ -29,6 +29,10 @@ class User < ActiveRecord::Base
       #end
       
     end
+    
+    def self.find_best(diff)
+      User.where(diff).order(diff).reverse.first(5)
+    end
 
 	rolify
 

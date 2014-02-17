@@ -9,17 +9,16 @@ class PagesController < ApplicationController
   end
 
   def ranking
-    @username= current_user.username
 
-    @current_user = current_user
-    @current_user.update_max_score(params[:diff],params[:score])
+    current_user.update_max_score(params[:diff],params[:score])
 
     #current_user.update_max_score(params[:diff],params[:score])
 
-    @current_user.save!
     #current_user.save!
-
-    @score = current_user.max_easy
+    #current_user.save!
+    
+    @top_users = User.find_best("max_#{params[:diff]}")
+    #User.order("max_#{params[:diff]}").reverse.first(5)
 
 
   end

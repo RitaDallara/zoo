@@ -65,7 +65,7 @@ class QuizzesController < ApplicationController
   end
 
   def prepare_game
-    @quizzes= Quiz.rand_quiz(params[:num])
+    @quizzes= Quiz.rand_quiz(params[:num],params[:diff])
 
     #render :template => 'quizzes/prepare_game'
     #render :nothing => true
