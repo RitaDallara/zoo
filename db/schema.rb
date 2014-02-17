@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140126214033) do
+ActiveRecord::Schema.define(version: 20140217150345) do
 
   create_table "animals", force: true do |t|
     t.string   "name"
@@ -51,9 +51,9 @@ ActiveRecord::Schema.define(version: 20140126214033) do
   create_table "users", force: true do |t|
     t.string   "username"
     t.string   "password"
-    t.integer  "max_easy"
-    t.integer  "max_medium"
-    t.integer  "max_hard"
+    t.integer  "max_easy",               default: 0
+    t.integer  "max_medium",             default: 0
+    t.integer  "max_hard",               default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "email",                  default: "", null: false
