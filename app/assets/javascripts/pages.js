@@ -108,8 +108,10 @@ $( "#next" ).click( function() {
 
 	if(i<animal_names.length)
 	{
-
+		
+		
 		document.getElementById("div_timer").innerHTML = seconds;
+
 		timer = setInterval(function(){mytimer()},1000);
 		$('#animal').append('<img src="'+animal_image_urls[i]+'" style="max-height: 300px;" >');
 		$('#alternative').append('<img src="'+alternative_image_urls[i]+'" style="max-height: 300px;" >');
