@@ -12,6 +12,8 @@
   <div class="div_field_sign"><br />
   <%= f.password_field :password, placeholder: 'Password' %></div>
 
+  <div></div>
+
   <% if devise_mapping.rememberable? -%>
     <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
   <% end -%>
