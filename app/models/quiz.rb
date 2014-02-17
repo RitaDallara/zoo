@@ -9,6 +9,8 @@ class Quiz < ActiveRecord::Base
   def self.rand_quiz(num)
     Quiz.where(id: Quiz.pluck(:id).sample(num.to_i))
   end
+  
+  validate :validate_animal
 
   def validate_animal 
        if animal_id.nil? 
