@@ -5,6 +5,7 @@
  <table class="table" align="right" cellpadding="0" cellspacing="0" border="0">
   <tr><td><%= image_tag("lock_green.png", width: '40', height: '40') %></td>
   <td id="log"><%= link_to 'Logged In [click to logout]', destroy_user_session_path, :method => :delete %></td></tr>
+  <tr><td><%= link_to "Change account details", edit_user_registration_path %></td></tr>
 	</table></div>
 <% else %>
 <div class="container_log">

@@ -37,15 +37,37 @@ class UsersController < ApplicationController
       end
     end
   end
+  
+  
+#  def update 
+ #    @user = User.find(params[:id])
+  #    params[:user].delete(:password) if params[:user][:password].blank?
+   #   params[:user].delete(:password_confirmation) if params[:user][:password].blank? and params[:user][:password_confirmation].blank?
+    #  if @user.update_attributes(params[:user])
+     #   flash[:notice] = "Successfully updated User."
+      #  redirect_to root_path
+      #else
+       # render :action => 'edit'
+      #end
+      #end
+ 
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+# params[:user].delete(:password) if params[:user][:password].blank?
+ #params[:user].delete(:password_confirmation) if params[:user][:password].blank? and params[:user][:password_confirmation].blank?
+ params[:user][:password] = current_user.password if params[:user][:password].blank?
+ params[:user][:password_confirmation] = current_user.password if params[:user][:password_confirmation].blank?
+
+# if @user.update_attributes(params[:user]) 
+
+
     respond_to do |format|
-      if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
-        format.json { head :no_content }
-      else
+     if @user.update(user_params)
+      format.html { redirect_to @user, notice: 'User was successfully updated.' }
+     format.json { head :no_content }
+  else
         format.html { render action: 'edit' }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
@@ -70,6 +92,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:username, :password, :max_easy, :max_medium, :max_hard)
+      params.require(:user).permit(:email, :password, :max_easy, :max_medium, :max_hard)
     end
 end

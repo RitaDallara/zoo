@@ -8,8 +8,21 @@ class ApplicationController < ActionController::Base
    protected
   
   def configure_permitted_parameters
-      devise_parameter_sanitizer.for(:sign_up) << :username
-    end
+     devise_parameter_sanitizer.for(:sign_up) << :username
+     # devise_parameter_sanitizer.for(:sign_up) do |u|
+      #  u.require(:email)
+       # u.require(:password)
+        #u.require(:password_confirmation)
+        #u.require(:username)
+    #end
+  end
+    
+   
+      #def configure_devise_parameters
+        #devise_parameter_sanitizer.for(:sign_up) do |u|
+       #   u.permit(:email,:password, :password_confirmation,:username)
+      #  end
+     # end
 
   before_filter do
   resource = controller_name.singularize.to_sym
