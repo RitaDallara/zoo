@@ -2,3 +2,33 @@ td.game_figure
 {
 	border: 10px solid black;
 }
+
+#div_timer
+{
+	font-size: 50px;
+	color: #ff0000;
+	font-weight: bold;
+}
+
+#div_timer {
+
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+
+#div_timer:hover {
+   
+    -webkit-transform: scale(1.05,1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(8,8);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
+}

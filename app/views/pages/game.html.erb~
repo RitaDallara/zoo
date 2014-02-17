@@ -1,7 +1,7 @@
 <h1 id='game'>GIOCA!</h1>
 
 <div id='div_timer'></div>
-<div id='container'>
+<div id='container' align='center'>
 <table>
 
 <tr><td class="game_figure"><span id='animal'></span></td>

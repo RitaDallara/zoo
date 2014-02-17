@@ -7,15 +7,44 @@
 #title_zoo
 {
 	color:yellow; 
-	font-size:800%;     
+	font-size:700%;     
 	text-shadow: -1px -1px 10px #000; 
 	font-family : "mpact","Charcoal","fantasy";
+        margin: 70px 70px 70px;
 }
 
 #user_widget
 {
-	margin: 0px;
+	 margin-top: 10px;
 	text-align: right;
+        font-weight: bold;
 }
+
+#log
+{
+	font-size: 17px;
+	color: #00ff00;
+}
+
+#welcome
+{
+	margin-top: 10px;
+        margin-bottom: 0.5px;
+	font-size: 17px;
+  	font-weight: bold;
+}
+
+#welcome:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+	
 
 

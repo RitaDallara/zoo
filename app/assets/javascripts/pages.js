@@ -16,8 +16,9 @@ console.log("fuck javascript!");
         var items = [];
         $('#disappear').fadeOut();
 
-		diff= "easy";
-		n_quiz= location.search.substr(1).split("&")[1].split("=")[1];
+		//diff= "easy";
+		n_quiz= location.search.substr(1).split("&")[0].split("=")[1];
+		diff= location.search.substr(1).split("&")[1].split("=")[1];
 
 $.getJSON( "quizzes/prepare_game?num="+n_quiz, function( data )
 {
@@ -107,8 +108,10 @@ $( "#next" ).click( function() {
 
 	if(i<animal_names.length)
 	{
-
+		
+		
 		document.getElementById("div_timer").innerHTML = seconds;
+
 		timer = setInterval(function(){mytimer()},1000);
 		$('#animal').append('<img src="'+animal_image_urls[i]+'" style="max-height: 300px;" >');
 		$('#alternative').append('<img src="'+alternative_image_urls[i]+'" style="max-height: 300px;" >');
