@@ -1,4 +1,5 @@
 
+<div class="transparent_home" align="center">
 <div> <p  class="testo">Help</p></div>
 <p> </p>
 <p> </p>
@@ -19,7 +20,6 @@
     <input type = "radio" class="home_radio" name = "num" value = "5" required />
     <label >5</label>
   </p>
-      
 
   <p class="legend">How much do you know about animals?</p>
   <p>            
@@ -33,15 +33,17 @@
     <label >Roar!</label>
   </p>
 
-  <p> </p>
-  <p> </p>
-  <p> </p>
+
   <div>
-  <input type="submit" id="start-game-button" value="Start game"/>
+  <input type="submit" class="div_submit" value="Start game"/>
   </div>
 </form>
 
 </div>
+</div>
+
+
+
 
 
 
