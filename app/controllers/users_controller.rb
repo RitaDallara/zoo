@@ -57,8 +57,8 @@ class UsersController < ApplicationController
   def update
 # params[:user].delete(:password) if params[:user][:password].blank?
  #params[:user].delete(:password_confirmation) if params[:user][:password].blank? and params[:user][:password_confirmation].blank?
- params[:user][:password] = current_user.password if params[:user][:password].blank?
- params[:user][:password_confirmation] = current_user.password if params[:user][:password_confirmation].blank?
+  params[:user][:password] = @user.password if params[:user][:password].blank?
+  params[:user][:password_confirmation] = @user.password if params[:user][:password_confirmation].blank?
 
 # if @user.update_attributes(params[:user]) 
 
