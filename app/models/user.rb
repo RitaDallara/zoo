@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
 
   after_create :assign_default_role
+  #attr_accessible :email, :password, :password_confirmation, :remember_me, :username
+  validates :username, :presence => :true
 
     def assign_default_role
       add_role(:user)
@@ -32,6 +34,7 @@ class User < ActiveRecord::Base
     
     def self.find_best(diff)
       User.where(diff).order(diff).reverse.first(5)
+      #User.order(diff).reverse.first(5)
     end
 
 	rolify

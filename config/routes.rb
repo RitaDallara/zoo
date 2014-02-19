@@ -1,4 +1,5 @@
 Zoo::Application.routes.draw do
+
   get "pages/home"
   get "pages/about"
   #get "pages/game" => 'pages#game', :as => :gamestart
@@ -27,8 +28,16 @@ Zoo::Application.routes.draw do
   resources :quizzes, :only => :create do
     get :autocomplete_animal, :on => :collection
   end
+  
+# config/routes.rb
+# config/routes.rb
 
+  
   root :to => 'pages#home'
+  
+ # unless Rails.application.config.consider_all_requests_local
+    match '*not_found', to: 'errors#error_404', via: [:get, :post]
+ # end
 
  
 
