@@ -59,6 +59,7 @@ class UsersController < ApplicationController
  #params[:user].delete(:password_confirmation) if params[:user][:password].blank? and params[:user][:password_confirmation].blank?
   params[:user][:password] = @user.password if params[:user][:password].blank?
   params[:user][:password_confirmation] = @user.password if params[:user][:password_confirmation].blank?
+  params[:user][:username] = @user.username if params[:user][:username].blank?
 
 # if @user.update_attributes(params[:user]) 
 
@@ -92,6 +93,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:email, :password, :max_easy, :max_medium, :max_hard)
+      params.require(:user).permit(:username, :email, :password, :max_easy, :max_medium, :max_hard)
     end
 end
