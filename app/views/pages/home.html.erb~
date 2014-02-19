@@ -35,7 +35,7 @@
 
 
   <div>
-  <input type="submit" class="div_submit" value="Start game"/>
+  <input type="submit" id="start-game-button" value="Start game"/>
   </div>
 </form>
 

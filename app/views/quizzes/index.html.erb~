@@ -16,15 +16,17 @@
   </thead>
 
   <tbody>
+
+<div class="generic_button"><%= button_to 'New Quiz', new_quiz_path, method: :get %></div>
     <% @quizzes.each do |quiz| %>
       <tr><td></td></tr>
       <tr>
         <td class="img-quiz"><%= image_tag Animal.find(quiz.animal_id).avatar.url(:thumb) %></td>
         <td class="img-quiz"><%= image_tag Animal.find(quiz.alternative_id).avatar.url(:thumb) %></td>
         <td class="diff" align="center"><%= quiz.difficulty %></td>
-        <td class="s-e-d"><%= link_to 'Show', quiz %></td>
-        <td class="s-e-d"><%= link_to 'Edit', edit_quiz_path(quiz) %></td>
-        <td class="s-e-d"><%= link_to 'Destroy', quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="s-e-d"><%= link_to 'Show ', quiz %></td>
+        <td class="s-e-d"><%= link_to 'Edit ', edit_quiz_path(quiz) %></td>
+        <td class="s-e-d"><%= link_to 'Destroy ', quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Quiz', new_quiz_path %>
+
