@@ -161,6 +161,7 @@ $( "#next" ).click( function() {
 		
 			$(quiz_id).append('<span><img src="'+answer_validity_url+'" style="max-width: 20px; max-height: 20px;" ></span>');
 		}
+		score= score/n_quiz * 100;
 		$(document.body).append('<form method="get" action="ranking">'+'<input type="hidden" name="score" value="'+score+'"><input type="hidden" name="diff" value="'+diff+'">'+'<input type="submit" value="Submit score and view ranking">'+'</form>');
 	}
 });
