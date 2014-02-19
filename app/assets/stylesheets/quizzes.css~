@@ -1,0 +1,12 @@
+.img-quiz{
+    border:5px solid black;
+}
+
+.diff
+{
+	font-size: 18px;
+  	font-weight: bold;
+	text-align: center
+}
+
+

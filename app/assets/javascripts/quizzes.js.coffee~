@@ -1,51 +1,8 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
-function()
-{
-var animal_names = new Array();
-var alternative_names = new Array();
-var animal_image_urls = new Array();
-var alternative_image_urls = new Array();
-var sounds = new Array();
-var answers = new Array();
-var choice;
-        var items = [];
-        $('#disappear').fadeOut();
-                var num= <%= @num_quiz %>;
-                alert(num);
-$.getJSON( "quizzes/prepare_game?num="+num, function( data )
-{
-
-$.each( data, function( key, val)
-{
-animal_names.push(val.animal.name);
-alternative_names.push(val.alternative.name);
-animal_image_urls.push(val.animal.avatar);
-alternative_image_urls.push(val.alternative.avatar);
-
-choice = Math.floor(Math.random()*2) +1;
-
-if(choice == 1)
-sounds.push(val.animal.sound);
-else
-sounds.push(val.alternative.sound);
-
-answers.push(choice);
-
-});
 
 
-var i;
-for(i=0; i < animal_names.length; i++)
-{
-items.push( "<li id='" + i + "'>" + animal_names[i] + "</li>" );
-}
-
-$( "<ul/>", {"class": "my-new-list", html: items.join( "" )}).appendTo( "body" );
-
-});
-
-          
-          return false;
-}
+ $(".img-radio img").click(function(){
+     $(this).prev().attr('checked',true);
+ })

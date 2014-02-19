@@ -10,10 +10,11 @@
 </head>
 <body id='p_CSS'>
 
-  	
+  	<div id="user_widget"><%= render :partial => 'layouts/user_widget' %></div>
 <div id="admin_links">
 
-<table class="transparent_menu" border="1">
+
+<table class="transparent_menu">
 <tr>
 <td class="menu_text"><%= link_to 'Home', root_url %></td>
 	<% if user_signed_in? %>
@@ -27,7 +28,7 @@
 </tr>
 </table>
 		</div>
-<div id="user_widget"><%= render :partial => 'layouts/user_widget' %></div>
+
 	<div><h1 id="title_zoo" align="center"> Indovina Zoo </h1></div>
 	
 	
@@ -40,6 +41,9 @@
 
 
   	<%= yield %>
+
+
+
 
 
 </body>

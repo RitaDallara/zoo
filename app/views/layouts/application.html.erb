@@ -10,8 +10,9 @@
 </head>
 <body id='p_CSS'>
 
-  	
-<div id="admin_links">
+  	<div id="user_widget"><%= render :partial => 'layouts/user_widget' %></div>
+
+
 
 <table class="transparent_menu">
 <tr>
@@ -26,8 +27,8 @@
 
 </tr>
 </table>
-		</div>
-<div id="user_widget"><%= render :partial => 'layouts/user_widget' %></div>
+	
+
 	<div><h1 id="title_zoo" align="center"> Indovina Zoo </h1></div>
 	
 	
@@ -40,6 +41,9 @@
 
 
   	<%= yield %>
+
+
+
 
 
 </body>
