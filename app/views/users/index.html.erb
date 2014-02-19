@@ -1,13 +1,13 @@
-<h1>Listing users</h1>
+<h1 align="center">Listing users</h1>
 
-<table>
+<table class="transparent_home" align="center" cellspacing="0">
   <thead>
-    <tr>	 
+    <tr class="legend">	 
       <th>Username</th>
       <th>Email</th>
-      <th>Max easy</th>
-      <th>Max medium</th>
-      <th>Max hard</th>
+      <th>Max-easy</th>
+      <th>Max-medium</th>
+      <th>Max-hard</th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,15 +16,16 @@
 
   <tbody>
     <% @users.each do |user| %>
+      <tr><td></td></tr>
       <tr>
-        <td><%= user.username %></td>
-        <td><%= user.email %></td>
-        <td><%= user.max_easy %></td>
-        <td><%= user.max_medium %></td>
-        <td><%= user.max_hard %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="diff"><%= user.username %></td>
+        <td class="diff"><%= user.email %></td>
+        <td class="diff" align="center"><%= user.max_easy %></td>
+        <td class="diff" align="center"><%= user.max_medium %></td>
+        <td class="diff" align="center"><%= user.max_hard %></td>
+        <td class="s-e-d"><%= link_to 'Show', user %></td>
+        <td class="s-e-d"><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td class="s-e-d"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

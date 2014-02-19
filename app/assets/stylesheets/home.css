@@ -90,6 +90,23 @@ label
     
 }
 
+.s-e-d
+{
+  	font-size: 14px;
+  	font-weight: bold;
+           opacity: 0.5;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+
+
+}
+
+.s-e-d:hover 
+{
+      opacity: 1;
+}
+
 
 
 
