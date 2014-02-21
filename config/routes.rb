@@ -9,6 +9,7 @@ Zoo::Application.routes.draw do
   resources :animals
 
   get "users/:id/assign_admin_role/" => 'users#assign_admin_role', as: :assign_admin_role
+  get "users/:id/remove_admin_role/" => 'users#remove_admin_role', as: :remove_admin_role
 
   get ":controller/:action"
   

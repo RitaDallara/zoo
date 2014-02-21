@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_filter :authenticate_user!
   load_and_authorize_resource
-  before_action :set_user, only: [:show, :edit, :update, :destroy, :assign_admin_role]
+  before_action :set_user, only: [:show, :edit, :update, :destroy, :assign_admin_role, :remove_admin_role]
 
   # GET /users
   # GET /users.json
@@ -41,8 +41,15 @@ class UsersController < ApplicationController
 
 
   def assign_admin_role
-    @user.add_role :admin
-    redirect_to @user
+   @user.add_role :admin
+   #redirect_to @user
+   redirect_to users_path
+  end
+  
+  def remove_admin_role
+   @user.remove_role :admin
+   #redirect_to @user
+   redirect_to users_path
   end
 
 

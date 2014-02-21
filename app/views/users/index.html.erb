@@ -28,7 +28,11 @@
         <td class="s-e-d"><%= link_to 'Show', user %></td>
         <td class="s-e-d"><%= link_to 'Edit', edit_user_path(user) %></td>
         <td class="s-e-d"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td class="s-e-d"><% if not(user.has_role? :admin) %> <%= link_to 'Make Admin', assign_admin_role_path(user) %> <% end %></td>
+        <% if not(user.has_role? :admin) %>
+        <td class="s-e-d"> <%= link_to 'Make_Admin', assign_admin_role_path(user) %> </td>
+        <% elsif user.has_role? :admin %>
+        <td class="s-e-d"> <%= link_to 'Demote_to_User', remove_admin_role_path(user) %> </td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

@@ -1,0 +1,41 @@
+<h1 align="center">Listing animals</h1>
+
+
+<%= button_to 'New Animal', new_animal_path, method: :get, class: "start-game-button"  %>
+<table class="transparent_home" align="center" cellspacing="0" border="0">
+  <thead>
+    <tr class="legend">
+      <th>Name</th>
+      <th>Avatar</th>
+      <th>Sound</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  
+  </thead>
+
+
+  <tbody>
+
+    <% @animals.each do |animal| %>
+      <tr><td></td></tr>
+      <tr>
+        <td class="diff"><%= animal.name %></td>
+        <td class="img-quiz"><%= image_tag animal.avatar.url(:thumb) %></td>
+        <td> <audio controls="controls"><source src="<%= animal.sound.url %>" type="audio/mpeg"></audio></td>
+        <td class="s-e-d"><%= link_to 'Show', animal %></td>
+        <td class="s-e-d"><%= link_to 'Edit', edit_animal_path(animal) %></td>
+        <td class="s-e-d"><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<<<<<<< HEAD
+<%= button_to 'New Animal', new_animal_path, method: :get %>
+=======
+
+>>>>>>> 3605b6342f2b2733e57817c38dbaf47215266c29
