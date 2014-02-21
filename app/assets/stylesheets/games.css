@@ -32,3 +32,13 @@ td.game_figure
     position: relative;
     z-index: 99;
 }
+
+#score
+{
+	font-size: 30px;
+	color: #ff0000;
+	font-weight: bold;
+}
+
+
+	

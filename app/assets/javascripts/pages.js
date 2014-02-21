@@ -12,7 +12,7 @@ var sounds = new Array();
 var answers = new Array();
 var user_answers = new Array();
 var choice;
-console.log("fuck javascript!");
+
         var items = [];
         $('#disappear').fadeOut();
 
@@ -144,25 +144,38 @@ $( "#next" ).click( function() {
 		//game ended
 		$('#next').fadeOut();
 		$('#div_timer').fadeOut();
-		$('#game').text("FINE!");
+                $('#table_quiz').fadeOut();
+		$('#game').fadeOut();
+              
+		$('#score').text("You scored "+score+" points!!!");
 
-		$('#animal').append('<p>'+score+'</p>');
+		
+            
+			var quiz_id= "#quiz" + i;
+               
 		for(i=0; i<animal_names.length; i++)
 		{
 			$('#container').append('<div id="quiz'+i+'"></div>');
 			var quiz_id= "#quiz" + i;
-			$(quiz_id).append('<span><img src="'+animal_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
-			$(quiz_id).append('<span><img src="'+alternative_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
+
+                    
+                       
+			
 			var answer_validity_url;
 			if(user_answers[i] === true)
-				answer_validity_url= "/assets/tick.jpg";
+				answer_validity_url= "/assets/tick.png";
 			else
-				answer_validity_url= "/assets/cross.jpg";
+				answer_validity_url= "/assets/cross.png";
 		
-			$(quiz_id).append('<span><img src="'+answer_validity_url+'" style="max-width: 20px; max-height: 20px;" ></span>');
+			$(quiz_id).append('<span><img src="'+answer_validity_url+'" style="max-width: 40px; max-height: 40px;" ></span>');
+                        $(quiz_id).append('<span><img class="img-quiz" src="'+animal_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
+			$(quiz_id).append('<span><img class="img-quiz" src="'+alternative_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
+                        $(quiz_id).append('<audio controls'+">"+'<source src="'+sounds[i]+'"/></audio>');
+                        $(quiz_id).append('<div></div>');
 		}
 		score= score/n_quiz * 100;
 		$(document.body).append('<form method="get" action="ranking">'+'<input type="hidden" name="score" value="'+score+'"><input type="hidden" name="diff" value="'+diff+'">'+'<input type="submit" value="Submit score and view ranking">'+'</form>');
+
 	}
 });
 

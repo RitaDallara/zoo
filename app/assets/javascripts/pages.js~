@@ -12,7 +12,7 @@ var sounds = new Array();
 var answers = new Array();
 var user_answers = new Array();
 var choice;
-console.log("fuck javascript!");
+
         var items = [];
         $('#disappear').fadeOut();
 
@@ -20,7 +20,7 @@ console.log("fuck javascript!");
 		n_quiz= location.search.substr(1).split("&")[0].split("=")[1];
 		diff= location.search.substr(1).split("&")[1].split("=")[1];
 
-$.getJSON( "quizzes/prepare_game?num="+n_quiz, function( data )
+$.getJSON( "quizzes/prepare_game?num="+n_quiz+"&diff="+diff, function( data )
 {
 
 $.each( data, function( key, val)
@@ -108,11 +108,10 @@ $( "#next" ).click( function() {
 
 	if(i<animal_names.length)
 	{
-		var e= $('#div_timer').css('color');
+		
 		
 		document.getElementById("div_timer").innerHTML = seconds;
-if(seconds < 4)
-			$('#div_timer').css({'color' : '#00ff00'});
+
 		timer = setInterval(function(){mytimer()},1000);
 		$('#animal').append('<img src="'+animal_image_urls[i]+'" style="max-height: 300px;" >');
 		$('#alternative').append('<img src="'+alternative_image_urls[i]+'" style="max-height: 300px;" >');
@@ -145,24 +144,37 @@ if(seconds < 4)
 		//game ended
 		$('#next').fadeOut();
 		$('#div_timer').fadeOut();
-		$('#game').text("FINE!");
+                $('#table_quiz').fadeOut();
+              
+		$('#game').text("You scored "+score+" points!!!");
 
-		$('#animal').append('<p>'+score+'</p>');
+		$('#score').append('<p>'+score+'</p>');
+            
+			var quiz_id= "#quiz" + i;
+               
 		for(i=0; i<animal_names.length; i++)
 		{
 			$('#container').append('<div id="quiz'+i+'"></div>');
 			var quiz_id= "#quiz" + i;
-			$(quiz_id).append('<span><img src="'+animal_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
-			$(quiz_id).append('<span><img src="'+alternative_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
+
+                    
+                       
+			
 			var answer_validity_url;
 			if(user_answers[i] === true)
-				answer_validity_url= "/assets/tick.jpg";
+				answer_validity_url= "/assets/tick.png";
 			else
-				answer_validity_url= "/assets/cross.jpg";
+				answer_validity_url= "/assets/cross.png";
 		
-			$(quiz_id).append('<span><img src="'+answer_validity_url+'" style="max-width: 20px; max-height: 20px;" ></span>');
+			$(quiz_id).append('<span><img src="'+answer_validity_url+'" style="max-width: 40px; max-height: 40px;" ></span>');
+                        $(quiz_id).append('<span><img class="img-quiz" src="'+animal_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
+			$(quiz_id).append('<span><img class="img-quiz" src="'+alternative_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
+                        $(quiz_id).append('<audio controls'+">"+'<source src="'+sounds[i]+'"/></audio>');
+                        $(quiz_id).append('<div></div>');
 		}
-		$(document.body).append('<form method="get" action="ranking">'+'<input type="hidden" name="score" value="'+score+'"><input type="hidden" name="diff" value="'+diff+'">'+'<input type="submit" value="Ranking">'+'</form>');
+        
+		$(document.body).append('<form method="get" action="ranking">'+'<input type="hidden" name="score" value="'+score+'"><input type="hidden" name="diff" value="'+diff+'">'+'<input type="submit" value="Submit score and view ranking">'+'</form>');
+
 	}
 });
 

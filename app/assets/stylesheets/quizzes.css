@@ -5,8 +5,23 @@
 .diff
 {
 	font-size: 18px;
+        /*font-size: 120%;*/
   	font-weight: bold;
+
 	
+}
+
+.generic_button
+{
+
+	margin-top: 30px;
+	
+	text-align : center;
+        height: 80px;
+        width: 200px;     
+        font-size: 26px;
+        font-weight: bold;
+    
 }
 
 

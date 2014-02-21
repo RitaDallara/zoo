@@ -21,7 +21,7 @@ td.game_figure
     -moz-transition-duration: 250ms;
 }
 
-#div_timer:loading {
+#div_timer:hover {
    
     -webkit-transform: scale(1.05,1.07);
     -webkit-transition-timing-function: ease-out;
@@ -32,3 +32,13 @@ td.game_figure
     position: relative;
     z-index: 99;
 }
+
+#score
+{
+	font-size: 30px;
+	color: #ff0000;
+	font-weight: bold;
+}
+
+
+	

@@ -1,8 +1,11 @@
 <h1 id='game'>GIOCA!</h1>
 
-<div id='div_timer'></div>
+
+<div id='score'></div>
+
+<div id='div_timer' align='center'></div>
 <div id='container' align='center'>
-<table>
+<table id="table_quiz" class="transparent_home">
 
 <tr><td class="game_figure"><span id='animal'></span></td>
 <td id="game_sound"><span id='sound'></span></td>
@@ -14,5 +17,5 @@
 
 </div>
 
-<button type='button' id='next'>Skip</button>
+<button type='button' id='next' align="center">Skip</button>
 

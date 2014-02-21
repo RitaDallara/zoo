@@ -1,6 +1,7 @@
 <h1 align="center">Listing animals</h1>
 
 
+<div class="generic_button"><%= button_to 'New Animal', new_animal_path, method: :get %></div>
 <table class="transparent_home" align="center" cellspacing="0" border="0">
   <thead>
     <tr class="legend">
@@ -16,8 +17,9 @@
 
 
   <tbody>
-  <tr><td></td></tr>
+
     <% @animals.each do |animal| %>
+      <tr><td></td></tr>
       <tr>
         <td class="diff"><%= animal.name %></td>
         <td class="img-quiz"><%= image_tag animal.avatar.url(:thumb) %></td>
@@ -32,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Animal', new_animal_path %>
+

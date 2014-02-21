@@ -16,6 +16,8 @@
   </thead>
 
   <tbody>
+
+<%= button_to 'New Quiz', new_quiz_path, method: :get, class: "start-game-button" %>
     <% @quizzes.each do |quiz| %>
       <tr><td></td></tr>
       <tr>
@@ -32,4 +34,4 @@
 
 <br>
 
-<%= button_to 'New Quiz', new_quiz_path, method: :get %>
+

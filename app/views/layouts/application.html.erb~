@@ -11,7 +11,7 @@
 <body id='p_CSS'>
 
   	<div id="user_widget"><%= render :partial => 'layouts/user_widget' %></div>
-<div id="admin_links">
+
 
 
 <table class="transparent_menu">
@@ -27,7 +27,7 @@
 
 </tr>
 </table>
-		</div>
+	
 
 	<div><h1 id="title_zoo" align="center"> Indovina Zoo </h1></div>
 	

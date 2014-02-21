@@ -1,13 +1,13 @@
 <h1 align="center">Listing users</h1>
 
-<table class="transparent_home" align="center">
+<table class="transparent_home" align="center" cellspacing="0">
   <thead>
     <tr class="legend">	 
       <th>Username</th>
       <th>Email</th>
-      <th>Max-easy</th>
-      <th>Max-medium</th>
-      <th>Max-hard</th>
+      <th>  easy  </th>
+      <th>  medium  </th>
+      <th>  hard  </th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,6 +16,7 @@
 
   <tbody>
     <% @users.each do |user| %>
+      <tr><td></td></tr>
       <tr>
         <td class="diff"><%= user.username %></td>
         <td class="diff"><%= user.email %></td>
