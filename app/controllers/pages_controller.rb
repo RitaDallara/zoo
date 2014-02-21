@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
-  respond_to :html, :js
-  
   before_filter :authenticate_user!, :only => [:game]
+  respond_to :html, :js
   
   def home
   end
