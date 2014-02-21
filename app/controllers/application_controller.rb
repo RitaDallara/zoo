@@ -13,9 +13,9 @@ class ApplicationController < ActionController::Base
       #render :file => "#{Rails.root}/public/403.html", :status => 403, :layout => false
     #end
     rescue_from CanCan::AccessDenied, with: lambda { |exception| render_error 403, exception}
-    #rescue_from Exception, with: lambda { |exception| render_error 500, exception }
     rescue_from ActionController::RoutingError, ActionController::UnknownController, ::AbstractController::ActionNotFound, ActiveRecord::RecordNotFound, with: lambda { |exception| render_error 404, exception }
- # end
+    #rescue_from Exception, with: lambda { |exception| render_error 500, exception }
+# end
   
   
    protected

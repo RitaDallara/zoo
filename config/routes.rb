@@ -1,42 +1,26 @@
 Zoo::Application.routes.draw do
-
-  get "pages/home"
-  get "pages/about"
-  #get "pages/game" => 'pages#game', :as => :gamestart
-  #get "quizzes/prepare_game" => 'quizzes#prepare_game', :as => :startgame
-  get "pages/quizzes/prepare_game" => 'quizzes#prepare_game', :defaults => { :format => 'json' }
-  get "pages/game"
-  get "pages/ranking"
-
-  # match 'home/newbill' => 'home#newbill', :as => :newbill
+  
   devise_for :users
+    
   resources :users
 
   resources :quizzes
 
   resources :animals
 
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  get "users/:id/assign_admin_role/" => 'users#assign_admin_role', as: :assign_admin_role
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
-
- 
-
-  resources :quizzes, :only => :create do
-    get :autocomplete_animal, :on => :collection
-  end
+  get ":controller/:action"
   
-# config/routes.rb
-# config/routes.rb
+  scope "/pages" do
+    get "quizzes/prepare_game" => 'quizzes#prepare_game', :defaults => { :format => 'json' }
+  end
 
   
   root :to => 'pages#home'
   
  # unless Rails.application.config.consider_all_requests_local
-    match '*not_found', to: 'errors#error_404', via: [:get, :post]
+  match '*not_found(.*)', to: 'errors#error_404', via: [:get, :post]
  # end
 
  
