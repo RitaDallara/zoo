@@ -1,19 +1,54 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Animal:</strong>
-  <%= Animal.find(@quiz.animal_id).name %>
-</p>
 
-<p>
-  <strong>Alternative:</strong>
-  <%= Animal.find(@quiz.alternative_id).name %>
-</p>
+<!--<div class="transparent_home">
 
-<p>
-  <strong>Difficulty:</strong>
+  <%= image_tag Animal.find(@quiz.animal_id).avatar.url(:thumb) %>
+
+
+
+  
+  <%= image_tag Animal.find(@quiz.alternative_id).avatar.url(:thumb) %>
+
+
+
   <%= @quiz.difficulty %>
-</p>
 
-<%= link_to 'Edit', edit_quiz_path(@quiz) %> |
-<%= link_to 'Back', quizzes_path %>
+
+</div>
+
+<%= link_to 'Edit', edit_quiz_path(@quiz) %> |-->
+
+
+<table align="center" class="transparent_home" cellspacing="0">
+  <thead>
+
+ 
+    <tr class="legend">
+      <th>Animal</th>
+      <th>Animal</th>
+      <th>Difficulty</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+
+
+      <tr><td></td></tr>
+      <tr>
+        <td class="img-quiz">  <%= image_tag Animal.find(@quiz.animal_id).avatar.url(:thumb) %></td>
+        <td class="img-quiz"><%= image_tag Animal.find(@quiz.alternative_id).avatar.url(:thumb) %></td>
+        <td class="diff" align="center"><%= @quiz.difficulty %></td>
+        <td class="s-e-d"><%= link_to 'Back', quizzes_path %></td>
+        <td class="s-e-d"><%= link_to 'Edit ', edit_quiz_path(@quiz) %></td>
+        <td class="s-e-d"><%= link_to 'Destroy ', @quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+
+  </tbody>
+</table>
+

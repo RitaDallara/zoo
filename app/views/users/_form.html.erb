@@ -1,4 +1,4 @@
-
+<!--
 
 <%= form_for(@user) do |f| %>
  
@@ -20,4 +20,41 @@
 <% end %>
 
 
-<%= link_to "Back", :back %>
+<%= link_to "Back", :back %>-->
+
+
+
+<%= form_for(@user) do |f| %>
+  
+  <div class="container_sign">
+      
+      <div class="div_field_sign"><br />
+	<%= f.email_field :email, :autofocus => true, placeholder: 'Email'%>
+      </div>
+      
+      <div class="div_field_sign"><br />
+	<%= f.text_field :username, placeholder: 'username' %>
+      </div>
+
+      <div class="div_field_sign"><br />
+	<%= f.password_field :password, :autocomplete => "off", placeholder: 'New Password (if changing)' %>
+      </div>
+      
+      <div class="div_field_sign"><br />
+	<%= f.password_field :password_confirmation,  placeholder: 'New Password confirmation' %>
+      </div>
+
+	  
+  </div>
+
+  
+  <div class="div_submit">
+    <%= f.submit "Update" %>
+  </div>
+  
+  <% end %>
+
+      
+      
+
+

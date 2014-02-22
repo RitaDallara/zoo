@@ -1,4 +1,6 @@
-<h1 align="center">Listing quizzes</h1>
+<div class="center-div">
+<%= button_to 'New Quiz', new_quiz_path, method: :get, id: "new_quiz_button" %>
+</div>
 
 <table align="center" class="transparent_home" cellspacing="0">
   <thead>
@@ -6,7 +8,7 @@
  
     <tr class="legend">
       <th>Animal</th>
-      <th>Alternative</th>
+      <th>Animal</th>
       <th>Difficulty</th>
       <th></th>
       <th></th>
@@ -17,7 +19,7 @@
 
   <tbody>
 
-<%= button_to 'New Quiz', new_quiz_path, method: :get, class: "start-game-button" %>
+
     <% @quizzes.each do |quiz| %>
       <tr><td></td></tr>
       <tr>

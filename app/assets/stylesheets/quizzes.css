@@ -1,4 +1,5 @@
-.img-quiz{
+.img-quiz
+{
     border:5px solid black;
 }
 
@@ -21,6 +22,21 @@
         width: 200px;     
         font-size: 26px;
         font-weight: bold;
+    
+}
+
+#new_quiz_button
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align : center;
+        height: 80px;
+        width: 200px;   
+        font-size: 26px;
+        font-weight: bold;
+        -webkit-animation: pulse 3s infinite ease-in-out;
+        -moz-animation: pulse 3s infinite ease-in-out;
+ 
     
 }
 

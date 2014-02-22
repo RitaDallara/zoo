@@ -1,25 +1,63 @@
-<p id="notice"><%= notice %></p>
+<!--<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+
+<div class="transparent_home">
+
+ 
   <%= @animal.name %>
-</p>
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @animal.avatar.url(:medium) %>
-</p>
 
-<p>
-  <strong>Sound:</strong>
+  
+  <%= image_tag @animal.avatar.url(:thumb) %>
+
+
+
   <audio controls="controls">
 	<source src="<%= @animal.sound.url %>" type="audio/mpeg">
   </audio>
 
-  <object data="<%= @animal.sound.url %>" type="application/x-mplayer2">
-    <param name="filename" value="<%= @animal.sound.url %>" >
-  </object>
-</p>
+
+
+
+</div>
 
 <%= link_to 'Edit', edit_animal_path(@animal) %> |
-<%= link_to 'Back', animals_path %>
+<%= link_to 'Back', animals_path %>-->
+
+<table align="center" class="transparent_home" cellspacing="0">
+  <thead>
+
+ 
+    <tr class="legend">
+      <th>Name</th>
+      <th>Image</th>
+      <th>Sound</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+
+
+      <tr><td></td></tr>
+      <tr>
+        <td><%= @animal.name %></td>
+        <td class="img-quiz"><%= image_tag @animal.avatar.url(:thumb) %></td>
+        <td> <audio controls="controls">
+	<source src="<%= @animal.sound.url %>" type="audio/mpeg"></audio></td>
+        <td class="s-e-d"><%= link_to 'Back', animals_path %></td>
+        <td class="s-e-d"><%= link_to 'Edit ', edit_animal_path(@animal) %></td>
+        <td class="s-e-d"><%= link_to 'Destroy ', @animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+
+  </tbody>
+</table>
+
+
+
+
+

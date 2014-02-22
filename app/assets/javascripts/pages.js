@@ -146,13 +146,15 @@ $( "#next" ).click( function() {
 		$('#div_timer').fadeOut();
                 $('#table_quiz').fadeOut();
 		$('#game').fadeOut();
-		
+              
 		score= score/n_quiz * 100;
 		$('#score').text("You scored "+score+" points!!!");
-
+                $('#score').append("<br/><br/>");
 		
-            
-			var quiz_id= "#quiz" + i;
+
+		var quiz_id= "#quiz" + i;
+
+                $('#container').addClass("transparent_result");
                
 		for(i=0; i<animal_names.length; i++)
 		{
@@ -172,10 +174,12 @@ $( "#next" ).click( function() {
                         $(quiz_id).append('<span><img class="img-quiz" src="'+animal_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
 			$(quiz_id).append('<span><img class="img-quiz" src="'+alternative_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
                         $(quiz_id).append('<audio controls'+">"+'<source src="'+sounds[i]+'"/></audio>');
-                        $(quiz_id).append('<div></div>');
+                        $(quiz_id).append('<div></div><br/><br/><br/>');
 		}
-		
-		$(document.body).append('<form method="get" action="ranking">'+'<input type="hidden" name="score" value="'+score+'"><input type="hidden" name="diff" value="'+diff+'">'+'<input type="submit" value="Submit score and view ranking">'+'</form>');
+
+                $('#button-game').append('<br/><br/><br/>');
+		$('#button-game').append('<form method="get" action="ranking">'+'<input type="hidden" name="score" value="'+score+'"><input type="hidden" name="diff" value="'+diff+'">'+'<input type="submit" id="ranking_button" value="Submit score and view ranking">'+'</form>');
+             
 
 	}
 });

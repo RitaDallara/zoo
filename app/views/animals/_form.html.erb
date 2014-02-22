@@ -1,29 +1,43 @@
-<%= form_for(@animal) do |f| %>
-  <% if @animal.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@animal.errors.count, "error") %> prohibited this animal from being saved:</h2>
 
-      <ul>
-      <% @animal.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+
+  <%= form_for(@animal) do |f| %>
+    <% if @animal.errors.any? %>
+      <div id="error_explanation">
+	<h2><%= pluralize(@animal.errors.count, "error") %> prohibited this animal from being saved:</h2>
+
+	<ul>
+	<% @animal.errors.full_messages.each do |msg| %>
+	  <li><%= msg %></li>
+	<% end %>
+	</ul>
+      </div>
+    <% end %>
+  
+
+
+    <div class="field">
+      <p/>
+      <%= f.text_field :name, placeholder: 'Animal name'%>
+    </div>
+
+    <div class="field">
+      <br/>
+      <%= f.label :avatar %><br/><br/>
+      <%= f.file_field :avatar %>
+    </div>
+    <p/>
+    <div class="field">
+
+      <br/>
+      <%= f.label :sound %><br/><br/>
+      <%= f.file_field :sound %>
+    </div>
+    <br/>
+    <div class="actions">
+      <%= f.submit %>
     </div>
   <% end %>
+  
+  <br/>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :avatar %><br>
-    <%= f.file_field :avatar %>
-  </div>
-  <div class="field">
-    <%= f.label :sound %><br>
-    <%= f.file_field :sound %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+

@@ -38,7 +38,7 @@
 .menu_text
 {
   	/*font-size: 26px;*/
-        font-size: 65%;
+        font-size: 60%;
   	font-weight: bold;
         opacity: 0.5;
    transition: opacity .25s ease-in-out;
@@ -95,7 +95,7 @@
   background: rgba(0, 0, 0, 0.08);
   border-radius: 4px;
   height: 40px;
-  width: 500px;
+  width: 600px;
   font-size: 50px;
   font-weight: bold;
   
