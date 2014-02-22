@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   respond_to :html, :js
   
   def home
+    @settings = Setting.first
   end
 
   def game

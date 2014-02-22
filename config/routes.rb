@@ -1,5 +1,7 @@
 Zoo::Application.routes.draw do
   
+  resources :settings
+
   devise_for :users
     
   resources :users

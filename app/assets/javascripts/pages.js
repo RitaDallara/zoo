@@ -147,7 +147,7 @@ $( "#next" ).click( function() {
                 $('#table_quiz').fadeOut();
 		$('#game').fadeOut();
               
-		score= score/n_quiz * 100;
+		score= parseInt(score/n_quiz * 100);
 		$('#score').text("You scored "+score+" points!!!");
                 $('#score').append("<br/><br/>");
 		

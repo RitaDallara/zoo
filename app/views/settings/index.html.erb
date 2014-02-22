@@ -1,0 +1,27 @@
+<h1>Listing settings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option one</th>
+      <th>Option two</th>
+      <th>Option three</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @settings.each do |setting| %>
+      <tr>
+        <td><%= setting.optone %></td>
+        <td><%= setting.opttwo %></td>
+        <td><%= setting.optthree %></td>
+        <td><%= link_to 'Change game options', edit_setting_path(setting) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

@@ -14,10 +14,15 @@ class Ability
 		    ( u.has_role?(:admin) )
 		  end
             cannot :create, User
+	    cannot :show, User
+	    cannot [:create, :destroy], Setting
+	    can :edit, Setting
           else
             if user.has_role? :user
               can :manage, Quiz 
 	      can :read, Animal
+	      
+	      cannot [:read, :manage], Setting
               cannot :read, User
               cannot :destroy, :all
               cannot :edit, :all
