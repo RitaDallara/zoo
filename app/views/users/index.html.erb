@@ -1,29 +1,27 @@
-<h1 align="center">Listing users</h1>
+
 
 <table class="transparent_home" align="center" cellspacing="0">
   <thead>
     <tr class="legend">	 
       <th>Username</th>
       <th>Email</th>
-      <th>Max-easy  </th>
-      <th>Max-medium  </th>
-      <th>Max-hard  </th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th width="200px">Max-easy  </th>
+      <th width="200px">Max-medium  </th>
+      <th width="200px">Max-hard  </th>
+      <th width="50px"></th>
+      <th width="80px"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @users.each do |user| %>
       <tr><td></td></tr>
-      <tr>
-        <td class="diff"><%= user.username %></td>
+      <tr height="50px">
+        <td class="diff" width="200px"><%= user.username %></td>
         <td class="diff"><%= user.email %></td>
         <td class="diff" align="center"><%= user.max_easy %></td>
         <td class="diff" align="center"><%= user.max_medium %></td>
         <td class="diff" align="center"><%= user.max_hard %></td>
-        <td class="s-e-d"><%= link_to 'Show', user %></td>
         <td class="s-e-d"><%= link_to 'Edit', edit_user_path(user) %></td>
         <td class="s-e-d"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

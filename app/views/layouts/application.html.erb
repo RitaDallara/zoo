@@ -18,10 +18,11 @@
 <tr>
 <td class="menu_text"><%= link_to 'Home', root_url %></td>
 	<% if user_signed_in? %>
-	<% if current_user.has_role? :admin %></td>
+	<% if current_user.has_role? :admin %>
 	<td class="menu_text"><%= link_to 'Animals', animals_path %></td> 
 	<td class="menu_text"><%= link_to 'Quizzes', quizzes_path %></td> 
-	<td class="menu_text"><%= link_to 'Users', users_path %> 
+	<td class="menu_text"><%= link_to 'Users', users_path %> </td>
+	<td class="menu_text"><%= link_to 'About', "pages/about" %> </td>
 		<% end %>
 		<% end %>
 

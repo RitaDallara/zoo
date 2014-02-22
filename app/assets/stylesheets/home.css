@@ -35,7 +35,25 @@ label
   position: absolute;
   background: rgba(0, 0, 0, 0.08);
   border-radius: 4px;
-  height: 400px;
+ /* height: 400px;
+  /*height: 100%;*/
+ /*width: 500px;
+  /*width: 40%;*/
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  	
+
+}
+
+
+/* home page transparent form block */
+
+#transparent_initial_home {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+ height: 350px;
   /*height: 100%;*/
  width: 500px;
   /*width: 40%;*/
@@ -45,7 +63,6 @@ label
   	
 
 }
-
 
 
 .legend
@@ -79,7 +96,7 @@ label
 100% { box-shadow: 0 0 100px rgba(0,255,255,0.2); }
 }
 
-.start-game-button
+#start-game-button
 {
 	margin-top: 30px;
 	

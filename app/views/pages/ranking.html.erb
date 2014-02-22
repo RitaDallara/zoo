@@ -1,11 +1,12 @@
-<h1 id='ranking'>CLASSIFICA!</h1>
 
-<table>
-  <th>Users</th><th>Scores</th>
+<h1 id="ranking">classifica</h1>
+
+<table class="transparent_home" cellspacing="0">
+  <tr class="legend"><th width="150px">Users</th><th width="100px">Scores</th>
     <% @top_users.each do |ranked_user| %>
     <tr>
-      <td><%= ranked_user.username %></td>
-      <td><%= ranked_user.send("max_#{params[:diff]}") %></td>
+      <td class="diff" height="50px"><%= ranked_user.username %></td>
+      <td class="diff" height="50px" align="center"><%= ranked_user.send("max_#{params[:diff]}") %></td>
     </tr>
     <% end %>
 </table>

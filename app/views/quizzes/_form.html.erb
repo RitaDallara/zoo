@@ -12,23 +12,14 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :Animal1 %><br>
-    <!--<%= f.text_field :animal_id %>
-    <!-- <%= f.select(:animal, Animal.all.map{|p| [p.avatar.url(:thumb)]}) %> -->
+    <%= f.label :Animal1 %><br/><br/>
+
 
 
     <table>
 
 
   <tbody>
-    <!--<% @animals = Animal.all %>
-    <% @animals.each do |animal| %>
-      <tr>
-        <td><%= f.radio_button(:animal_id, animal.id) %></td>
-        <!--<td><%= animal.name %></td>
-        <td class="image-zoom"><%= image_tag animal.avatar.url(:thumb) %></td>
-      </tr>
-    <% end %>-->
 
    <% @animals = Animal.all %>
     <% @animals.each do |animal| %>
@@ -40,24 +31,18 @@
     <% end %>
   </tbody>
 </table>
-
+<br/><br/>
 
   </div>
   <div class="field">
-    <%= f.label :Animal2 %><br>
-    <!--<%= f.text_field :alternative_id %> -->
+    <%= f.label :Animal2 %><br/><br/>
+
 <table>
 
 
   <tbody>
 
-    <!--<% @animals.each do |alternative| %>
-      <tr>
-        <td><%= f.radio_button(:alternative_id, alternative.id) %></td>
-        <!--td><%= alternative.name %></td>
-        <td class="image-zoom"><%= image_tag alternative.avatar.url(:thumb) %></td>
-      </tr>
-    <% end %>-->
+
 
 <% @animals = Animal.all %>
     <% @animals.each do |alternative| %>
@@ -69,10 +54,10 @@
 <% end %>
   </tbody>
 </table>
-
+<br/><br/>
   </div>
   <div class="field">
-    <%= f.label :difficulty %><br>
+    <%= f.label :difficulty %><br><br/>
     <%= f.radio_button(:difficulty, "easy") %>
     <%= f.label(:difficulty, "easy") %>
     <%= f.radio_button(:difficulty, "medium") %>
@@ -84,9 +69,11 @@
   </div>
 
 
-
+<br/><br/>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+<br/>
 
