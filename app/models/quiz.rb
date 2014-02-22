@@ -15,6 +15,10 @@ class Quiz < ActiveRecord::Base
     Quiz.where(id: Quiz.where(difficulty: diff).pluck(:id).sample(num.to_i))
   end
   
+  def self.min_amount
+    [Quiz.where(difficulty: "hard").count, Quiz.where(difficulty: "medium").count, Quiz.where(difficulty: "easy").count].min
+  end
+  
   
 
   private
