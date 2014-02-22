@@ -9,6 +9,11 @@ class Ability
           if user.has_role? :admin
             can :manage, :all
 	          can :update, User
+		  can :assign_admin_role, User
+		  can :remove_admin_role, User
+		  cannot :destroy, User do |u|
+		    ( u.has_role?(:admin) )
+		  end
             cannot :create, User
           else
             if user.has_role? :user

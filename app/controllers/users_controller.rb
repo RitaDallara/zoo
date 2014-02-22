@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
+  before_filter :authenticate_user!
   load_and_authorize_resource
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:show, :edit, :update, :destroy, :assign_admin_role, :remove_admin_role]
 
   # GET /users
   # GET /users.json
@@ -37,20 +38,20 @@ class UsersController < ApplicationController
       end
     end
   end
+
+
+  def assign_admin_role
+   @user.add_role :admin
+   #redirect_to @user
+   redirect_to users_path
+  end
   
-  
-#  def update 
- #    @user = User.find(params[:id])
-  #    params[:user].delete(:password) if params[:user][:password].blank?
-   #   params[:user].delete(:password_confirmation) if params[:user][:password].blank? and params[:user][:password_confirmation].blank?
-    #  if @user.update_attributes(params[:user])
-     #   flash[:notice] = "Successfully updated User."
-      #  redirect_to root_path
-      #else
-       # render :action => 'edit'
-      #end
-      #end
- 
+  def remove_admin_role
+   @user.remove_role :admin
+   #redirect_to @user
+   redirect_to users_path
+  end
+
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
@@ -66,7 +67,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
      if @user.update(user_params)
-      format.html { redirect_to @user, notice: 'User was successfully updated.' }
+      format.html { redirect_to users_path }
      format.json { head :no_content }
   else
         format.html { render action: 'edit' }
@@ -87,12 +88,12 @@ class UsersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
-    end
+  def set_user
+    @user = User.find(params[:id])
+  end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def user_params
-      params.require(:user).permit(:username, :email, :password)
-    end
+  def user_params
+    params.require(:user).permit(:username, :email, :password)
+  end
 end

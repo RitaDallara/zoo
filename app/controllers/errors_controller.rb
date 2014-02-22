@@ -1,4 +1,6 @@
 class ErrorsController < ApplicationController
+  respond_to :all
+  
   def error_404
     @not_found_path = params[:not_found]
   end
