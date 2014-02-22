@@ -21,24 +21,13 @@ class ApplicationController < ActionController::Base
    protected
   
   def configure_permitted_parameters
-     #devise_parameter_sanitizer.for(:sign_up) << :username
-     # devise_parameter_sanitizer.for(:sign_up) do |u|
-      #  u.require(:email)
-       # u.require(:password)
-        #u.require(:password_confirmation)
-        #u.require(:username)
-    #end
     devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:username, :email, :password, :password_confirmation, :remember_me) }
     devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:login, :username, :email, :password, :remember_me) }
     devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:email, :username, :password, :password_confirmation, :current_password) } 
   end
     
    
-      #def configure_devise_parameters
-        #devise_parameter_sanitizer.for(:sign_up) do |u|
-       #   u.permit(:email,:password, :password_confirmation,:username)
-      #  end
-     # end
+
 
   before_filter do
     resource = controller_name.singularize.to_sym

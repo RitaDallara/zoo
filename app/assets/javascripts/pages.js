@@ -146,7 +146,8 @@ $( "#next" ).click( function() {
 		$('#div_timer').fadeOut();
                 $('#table_quiz').fadeOut();
 		$('#game').fadeOut();
-              
+		
+		score= score/n_quiz * 100;
 		$('#score').text("You scored "+score+" points!!!");
 
 		
@@ -173,7 +174,7 @@ $( "#next" ).click( function() {
                         $(quiz_id).append('<audio controls'+">"+'<source src="'+sounds[i]+'"/></audio>');
                         $(quiz_id).append('<div></div>');
 		}
-		score= score/n_quiz * 100;
+		
 		$(document.body).append('<form method="get" action="ranking">'+'<input type="hidden" name="score" value="'+score+'"><input type="hidden" name="diff" value="'+diff+'">'+'<input type="submit" value="Submit score and view ranking">'+'</form>');
 
 	}

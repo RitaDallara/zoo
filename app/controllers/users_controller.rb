@@ -33,7 +33,7 @@ class UsersController < ApplicationController
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
-        format.html { render action: 'new' }
+	format.html { render action: 'new' }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -41,37 +41,30 @@ class UsersController < ApplicationController
 
 
   def assign_admin_role
-   @user.add_role :admin
-   #redirect_to @user
-   redirect_to users_path
+    @user.add_role :admin
+    redirect_to users_path
   end
   
   def remove_admin_role
-   @user.remove_role :admin
-   #redirect_to @user
-   redirect_to users_path
+    @user.remove_role :admin
+    redirect_to users_path
   end
 
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
-# params[:user].delete(:password) if params[:user][:password].blank?
- #params[:user].delete(:password_confirmation) if params[:user][:password].blank? and params[:user][:password_confirmation].blank?
-  params[:user][:password] = @user.password if params[:user][:password].blank?
-  params[:user][:password_confirmation] = @user.password if params[:user][:password_confirmation].blank?
-  params[:user][:username] = @user.username if params[:user][:username].blank?
-
-# if @user.update_attributes(params[:user]) 
-
+    params[:user][:password] = @user.password if params[:user][:password].blank?
+    params[:user][:password_confirmation] = @user.password if params[:user][:password_confirmation].blank?
+    params[:user][:username] = @user.username if params[:user][:username].blank?
 
     respond_to do |format|
-     if @user.update(user_params)
-      format.html { redirect_to users_path }
-     format.json { head :no_content }
-  else
-        format.html { render action: 'edit' }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+      if @user.update(user_params)
+	format.html { redirect_to users_path }
+	format.json { head :no_content }
+      else
+	format.html { render action: 'edit' }
+	format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -87,12 +80,13 @@ class UsersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+  
+  # Use callbacks to share common setup or constraints between actions.
   def set_user
     @user = User.find(params[:id])
   end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+  # Never trust parameters from the scary internet, only allow the white list through.
   def user_params
     params.require(:user).permit(:username, :email, :password)
   end
