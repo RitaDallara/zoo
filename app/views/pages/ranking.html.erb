@@ -1,5 +1,7 @@
 
-<h1 id="ranking">classifica</h1>
+<h1 id="ranking">RANKING</h1>
+
+<div id='score'>You scored <%= @current_score %> points!</div>
 
 <table class="transparent_home" cellspacing="0">
   <tr class="legend"><th width="150px">Users</th><th width="100px">Scores</th>
@@ -10,4 +12,8 @@
     </tr>
     <% end %>
 </table>
+
+<%= tweet_button(:via => "indovina_zoo", :url => "http://indovinazoo.com",
+		  :text => "I just played Indovina Zoo and scored "+@current_score+" points! Can you do better?",
+		  :count => "none") %>
 
