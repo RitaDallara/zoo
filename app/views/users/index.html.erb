@@ -1,13 +1,13 @@
 
 
-<table class="transparent_home" align="center" cellspacing="0">
+<table class="transparent" align="center" cellspacing="0">
   <thead>
     <tr class="legend">	 
       <th>Username</th>
       <th>Email</th>
-      <th width="200px">Max-easy  </th>
-      <th width="200px">Max-medium  </th>
-      <th width="200px">Max-hard  </th>
+      <th width="150px">Max-easy  </th>
+      <th width="150px">Max-medium  </th>
+      <th width="150px">Max-hard  </th>
       <th width="50px"></th>
       <th width="80px"></th>
       <th></th>
@@ -20,8 +20,8 @@
     <% @users.each do |user| %>
       <tr><td></td></tr>
       <tr height="50px">
-        <td class="diff" width="200px"><%= user.username %></td>
-        <td class="diff"><%= user.email %></td>
+        <td class="diff" align="center" width="200px"><%= user.username %></td>
+        <td class="diff" align="center"><%= user.email %></td>
         <td class="diff" align="center"><%= user.max_easy %></td>
         <td class="diff" align="center"><%= user.max_medium %></td>
         <td class="diff" align="center"><%= user.max_hard %></td>

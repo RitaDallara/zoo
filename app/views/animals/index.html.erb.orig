@@ -2,7 +2,7 @@
 
 
 <%= button_to 'New Animal', new_animal_path, method: :get, class: "start-game-button"  %>
-<table class="transparent_home" align="center" cellspacing="0" border="0">
+<table class="transparent" align="center" cellspacing="0" border="0">
   <thead>
     <tr class="legend">
       <th>Name</th>
