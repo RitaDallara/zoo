@@ -66,7 +66,7 @@ function mytimer()
 	if(seconds === 3)
 	{
 	  $('#div_timer').addClass('hover');
-	  $('#div_timer').addClass('div_timer');
+	  $('#div_timer').removeClass('div_timer');
 	}
 	document.getElementById("div_timer").innerHTML = seconds;
 	

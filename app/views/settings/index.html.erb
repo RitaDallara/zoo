@@ -1,11 +1,11 @@
-<h1>Listing settings</h1>
+<h1>Allow players to choose between these options.</h1>
 
-<table>
+<table align="center" class="transparent" cellspacing="0">
   <thead>
-    <tr>
-      <th>Option one</th>
-      <th>Option two</th>
-      <th>Option three</th>
+    <tr class="legend">
+      <th width="300px">Option one</th>
+      <th width="300px">Option two</th>
+      <th width="300px">Option three</th>
       <th></th>
       <th></th>
       <th></th>
@@ -15,10 +15,10 @@
   <tbody>
     <% @settings.each do |setting| %>
       <tr>
-        <td><%= setting.optone %></td>
-        <td><%= setting.opttwo %></td>
-        <td><%= setting.optthree %></td>
-        <td><%= link_to 'Change game options', edit_setting_path(setting) %></td>
+        <td class="diff" align="center" height="100px"><%= setting.optone %></td>
+        <td class="diff" align="center"><%= setting.opttwo %></td>
+        <td class="diff" align="center"><%= setting.optthree %></td>
+        <td class="diff" align="center"><%= link_to 'Change game options', edit_setting_path(setting) %></td>
       </tr>
     <% end %>
   </tbody>
