@@ -1,18 +1,25 @@
-td.game_figure
+/****** game css ******/
+
+
+/* style of images during the game */
+
+.game-figure > img
 {
-	border: 10px solid black;
+    border: 10px solid black;
 }
+
+
+/* timer */
 
 #div_timer
 {
-	font-size: 50px;
-	color: #ff0000;
-	font-weight: bold;
+    font-size: 50px;
+    color: #ff0000;
+    font-weight: bold;
 }
 
-#div_timer {
-
-    opacity: 1;
+.div_timer
+{
     -webkit-transform: scale(1,1);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 250ms;
@@ -20,10 +27,11 @@ td.game_figure
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 250ms;
 }
+  
 
-#div_timer:hover {
-   
-    -webkit-transform: scale(1.05,1.07);
+.hover
+{
+    -webkit-transform: scale(8,8);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 250ms;
     -moz-transform: scale(8,8);
@@ -33,57 +41,49 @@ td.game_figure
     z-index: 99;
 }
 
+
+/* score */
+
 #score
 {
-	font-size: 30px;
-	color: #ff0000;
-	font-weight: bold;
+    font-size: 30px;
+    color: #ff0000;
+    font-weight: bold;
 }
 
-.transparent_result {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.08);
-  border-radius: 4px;
- /*height: 400px;
-  /*height: 100%;*/
- width: 400px;
-  /*width: 40%;*/
-  position: relative;
-  margin: 0 auto;
-  padding: 20px 20px 20px;
+
+
+/* game recap style */
+
+.transparent-result 
+{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    width: 400px;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 20px 20px;
   	
-
 }
 
-#ranking_button
+/* ranking */
+
+#ranking-button
 {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	text-align : center;
-        height: 80px;
-        width: 500px;   
-        font-size: 26px;
-        font-weight: bold;
-        -webkit-animation: pulse 3s infinite ease-in-out;
-        -moz-animation: pulse 3s infinite ease-in-out;
- 
-    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align : center;
+    height: 80px;
+    width: 500px;   
+    font-size: 26px;
+    font-weight: bold;
+    -webkit-animation: pulse 3s infinite ease-in-out;
+    -moz-animation: pulse 3s infinite ease-in-out;
 }
 
-#next
-{
-	margin-top: 30px;
-	margin-bottom: 30px;
-	text-align : center;
-        height: 80px;
-        width: 200px;   
-        font-size: 26px;
-        font-weight: bold;
-        -webkit-animation: pulse 3s infinite ease-in-out;
-        -moz-animation: pulse 3s infinite ease-in-out;
- 
-    
-}
+
+
 
 
 	

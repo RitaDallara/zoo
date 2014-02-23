@@ -1,87 +1,88 @@
-#p_CSS 
-{
+/****** application.html.erb and _user_widget.html.erb style ******/
 
-  background-image: url('indovina_zoo.png');
+
+/* background image */
+
+#back-img 
+{
+    background-image: url('indovina_zoo.png');
 }
 
-#title_zoo
+
+#title-zoo
 {
-	color:yellow; 
-	font-size:800%;     
-	text-shadow: -4px -4px 20px #000; 
-	font-family : "mpact","Charcoal","fantasy";
-        margin: 80px 80px 80px;
-        text-align: center;
+    color:yellow; 
+    font-size:800%;     
+    text-shadow: -4px -4px 20px #000; 
+    font-family : "mpact","Charcoal","fantasy";
+    margin: 80px 80px 80px;
+    text-align: center;
 }
+
 
 #user_widget
 {
-	/* margin-top: 10px;*/
-	text-align: right;
-        font-weight: bold;
+    text-align: right;
+    font-weight: bold;
 }
 
-#log
+
+/* menubar */
+
+.menu-text
 {
-	font-size: 14px;
-	color: #00ff00;
+    font-size: 60%;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
 }
 
-#welcome
+.menu-text:hover 
 {
-	/*margin-top: 10px;
-        margin-bottom: 0.5px;*/
-	font-size: 17px;
-  	font-weight: bold;
+    opacity: 1;
 }
 
-.menu_text
+.transparent-menu
 {
-  	/*font-size: 26px;*/
-        font-size: 60%;
-  	font-weight: bold;
-        opacity: 0.5;
-   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-
-
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    height: 40px;
+    width: 600px;
+    font-size: 50px;
+    font-weight: bold;
 }
 
-.menu_text:hover 
-{
-      opacity: 1;
-}
 
+/* link change account details style */
 
 #change-det
 {
-  	font-size: 16px;
-  	font-weight: bold;
-           opacity: 0.5;
-   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-
-
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
 }
 
 #change-det:hover 
 {
-      opacity: 1;
+     opacity: 1;
 }
+
+
+/* login - logout style */
 
 #logging
 {
-  	/*font-size: 18px;*/
-        font-size: 130%;
-  	font-weight: bold;
-           opacity: 0.8;
-   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-
-
+    font-size: 130%;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
 }
 
 #logging:hover 
@@ -89,34 +90,20 @@
       opacity: 1;
 }
 
-
-.transparent_menu {
-  /*position: absolute;*/
-  background: rgba(0, 0, 0, 0.08);
-  border-radius: 4px;
-  height: 40px;
-  width: 600px;
-  font-size: 50px;
-  font-weight: bold;
-  
+.transparent_login 
+{
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    height: 40px;
+    width: 400px;
 }
 
-.transparent_login {
-
-  background: rgba(0, 0, 0, 0.08);
-  border-radius: 4px;
-  height: 40px;
-  width: 400px;
-
-}
-
-.transparent_log {
-
-  background: rgba(0, 0, 0, 0.08);
-  border-radius: 4px;
-  height: 40px;
-  width: 150px;
-
+.transparent_logout 
+{
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    height: 40px;
+    width: 150px;
 }
 
 

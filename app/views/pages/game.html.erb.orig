@@ -11,9 +11,9 @@
 <div id='container' align='center'>
 <table>
 
-<tr><td class="game_figure"><span id='animal'></span></td>
+<tr><td class="game-figure"><span id='animal'></span></td>
 <td id="game_sound"><span id='sound'></span></td>
-<td class="game_figure"><span id='alternative'></span></td> 
+<td class="game-figure"><span id='alternative'></span></td> 
 
 </tr>
 </table>

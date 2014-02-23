@@ -60,10 +60,17 @@ function mytimer()
 	{
 
 		user_answers[i]= false;
+		$('#div_timer').removeClass('hover');
 		$('#next').click();
 	}
+	if(seconds === 3)
+	{
+	  $('#div_timer').addClass('hover');
+	  $('#div_timer').addClass('div_timer');
+	}
 	document.getElementById("div_timer").innerHTML = seconds;
-
+	
+	
 	seconds--;
 
 
@@ -154,7 +161,7 @@ $( "#next" ).click( function() {
 
 		var quiz_id= "#quiz" + i;
 
-                $('#container').addClass("transparent_result");
+                $('#container').addClass("transparent-result");
                
 		for(i=0; i<animal_names.length; i++)
 		{
@@ -171,14 +178,14 @@ $( "#next" ).click( function() {
 				answer_validity_url= "/assets/cross.png";
 		
 			$(quiz_id).append('<span><img src="'+answer_validity_url+'" style="max-width: 40px; max-height: 40px;" ></span>');
-                        $(quiz_id).append('<span><img class="img-quiz" src="'+animal_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
-			$(quiz_id).append('<span><img class="img-quiz" src="'+alternative_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
+                        $(quiz_id).append('<span class="img-quiz"><img src="'+animal_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
+			$(quiz_id).append('<span class="img-quiz"><img src="'+alternative_image_urls[i]+'" style="max-width: 100px; max-height: 100px;" ></span>');
                         $(quiz_id).append('<audio controls'+">"+'<source src="'+sounds[i]+'"/></audio>');
                         $(quiz_id).append('<div></div><br/><br/><br/>');
 		}
 
                 $('#button-game').append('<br/><br/><br/>');
-		$('#button-game').append('<form method="get" action="ranking">'+'<input type="hidden" name="score" value="'+score+'"><input type="hidden" name="diff" value="'+diff+'">'+'<input type="submit" id="ranking_button" value="Submit score and view ranking">'+'</form>');
+		$('#button-game').append('<form method="get" action="ranking">'+'<input type="hidden" name="score" value="'+score+'"><input type="hidden" name="diff" value="'+diff+'">'+'<input type="submit" id="ranking-button" value="Submit score and view ranking">'+'</form>');
              
 
 	}

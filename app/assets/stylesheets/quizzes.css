@@ -1,43 +1,25 @@
-.img-quiz
+/****** quizzes css ******/
+
+
+/* image style in quiz  */
+
+.img-quiz > img
 {
     border:5px solid black;
 }
 
-.diff
+
+#new-quiz-button
 {
-	font-size: 18px;
-        /*font-size: 120%;*/
-  	font-weight: bold;
-
-	
-}
-
-.generic_button
-{
-
-	margin-top: 30px;
-	
-	text-align : center;
-        height: 80px;
-        width: 200px;     
-        font-size: 26px;
-        font-weight: bold;
-    
-}
-
-#new_quiz_button
-{
-	margin-top: 30px;
-	margin-bottom: 30px;
-	text-align : center;
-        height: 80px;
-        width: 200px;   
-        font-size: 26px;
-        font-weight: bold;
-        -webkit-animation: pulse 3s infinite ease-in-out;
-        -moz-animation: pulse 3s infinite ease-in-out;
- 
-    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align : center;
+    height: 80px;
+    width: 200px;   
+    font-size: 26px;
+    font-weight: bold;
+    -webkit-animation: pulse 3s infinite ease-in-out;
+    -moz-animation: pulse 3s infinite ease-in-out;
 }
 
 
