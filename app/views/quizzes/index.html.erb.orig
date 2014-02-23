@@ -1,4 +1,12 @@
-<h1 align="center">Listing quizzes</h1>
+<div class="center-div">
+<<<<<<< HEAD
+<% if can? :create, Quiz %>
+<%= button_to 'New Quiz', new_quiz_path, method: :get, id: "new_quiz_button" %>
+<% end %>
+=======
+<%= button_to 'New Quiz', new_quiz_path, method: :get, id: "new-quiz-button" %>
+>>>>>>> d26670c9e16f8a5d146ea74acb61791b466020b5
+</div>
 
 <table align="center" class="transparent" cellspacing="0">
   <thead>
@@ -6,7 +14,7 @@
  
     <tr class="legend">
       <th>Animal</th>
-      <th>Alternative</th>
+      <th>Animal</th>
       <th>Difficulty</th>
       <th></th>
       <th></th>
@@ -17,7 +25,7 @@
 
   <tbody>
 
-<%= button_to 'New Quiz', new_quiz_path, method: :get, class: "start-game-button" %>
+
     <% @quizzes.each do |quiz| %>
       <tr><td></td></tr>
       <tr>
@@ -25,8 +33,10 @@
         <td class="img-quiz"><%= image_tag Animal.find(quiz.alternative_id).avatar.url(:thumb) %></td>
         <td class="diff" align="center"><%= quiz.difficulty %></td>
         <td class="s-e-d"><%= link_to 'Show ', quiz %></td>
+        <% if can? :destroy, Quiz %>
         <td class="s-e-d"><%= link_to 'Edit ', edit_quiz_path(quiz) %></td>
         <td class="s-e-d"><%= link_to 'Destroy ', quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -34,8 +44,4 @@
 
 <br>
 
-<<<<<<< HEAD
-<%= button_to 'New Quiz', new_quiz_path, method: :get %>
-=======
 
->>>>>>> 3605b6342f2b2733e57817c38dbaf47215266c29
