@@ -14,7 +14,6 @@ class Ability
 		    ( u.has_role?(:admin) )
 		  end
             cannot :create, User
-	    cannot :show, User
 	    cannot [:create, :destroy], Setting
 	    can :edit, Setting
           else

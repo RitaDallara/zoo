@@ -44,7 +44,7 @@ class SettingsController < ApplicationController
   def update
     respond_to do |format|
       if @setting.update(setting_params)
-        format.html { redirect_to @setting, notice: 'Setting was successfully updated.' }
+        format.html { redirect_to settings_url }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }

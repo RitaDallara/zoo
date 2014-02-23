@@ -61,6 +61,7 @@ function mytimer()
 
 		user_answers[i]= false;
 		$('#div_timer').removeClass('hover');
+		$('#div_timer').addClass('div_timer');
 		$('#next').click();
 	}
 	if(seconds === 3)
@@ -75,7 +76,7 @@ function mytimer()
 
 } 
 var timer = setInterval(function(){mytimer()},1000);
-$(window ).unload(function(){clearInterval(timer)});
+$(window).unload(function(){console.log("PAGE CHANGED!"); clearInterval(timer); xhrObj.abort();});
 
 
 
@@ -105,6 +106,8 @@ $(other).click( function() {
 $( "#next" ).click( function() {
 	i++;
 	seconds= 10;
+	$('#div_timer').removeClass('hover');
+	$('#div_timer').addClass('div_timer');
 	clearInterval(timer);
 	$('#animal').unbind();
 	$('#alternative').unbind();
