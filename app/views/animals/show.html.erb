@@ -1,47 +1,19 @@
-<!--<p id="notice"><%= notice %></p>
-
-
-<div class="transparent">
-
- 
-  <%= @animal.name %>
-
-
-  
-  <%= image_tag @animal.avatar.url(:thumb) %>
-
-
-
-  <audio controls="controls">
-	<source src="<%= @animal.sound.url %>" type="audio/mpeg">
-  </audio>
-
-
-
-
-</div>
-
-<%= link_to 'Edit', edit_animal_path(@animal) %> |
-<%= link_to 'Back', animals_path %>-->
-
 <table align="center" class="transparent" cellspacing="0">
-  <thead>
 
+  <thead>
  
-    <tr class="legend">
-      <th>Name</th>
-      <th>Image</th>
-      <th>Sound</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
+      <tr class="legend">
+	  <th>Name</th>
+	  <th>Image</th>
+	  <th>Sound</th>
+	  <th></th>
+	  <th></th>
+	  <th></th>
+      </tr>
 
   </thead>
 
   <tbody>
-
-
 
       <tr><td></td></tr>
       <tr>
@@ -51,12 +23,13 @@
 	<source src="<%= @animal.sound.url %>" type="audio/mpeg"></audio></td>
         <td class="s-e-d"><%= link_to 'Back', animals_path %></td>
         <% if can? :destroy, Animal %>
-        <td class="s-e-d"><%= link_to 'Edit ', edit_animal_path(@animal) %></td>
-        <td class="s-e-d"><%= link_to 'Destroy ', @animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	    <td class="s-e-d"><%= link_to 'Edit ', edit_animal_path(@animal) %></td>
+	    <td class="s-e-d"><%= link_to 'Destroy ', @animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
       </tr>
 
   </tbody>
+  
 </table>
 
 

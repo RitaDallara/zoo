@@ -1,16 +1,23 @@
 
-<h1 id="ranking">RANKING</h1>
+<h1 id="ranking"></h1>
 
-<div id='score'>You scored <%= @current_score %> points!</div>
+<div id='score'>You scored <%= @current_score %> points!!!</div>
 
 <table class="transparent" cellspacing="0">
-  <tr class="legend"><th width="150px">Users</th><th width="100px">Scores</th>
-    <% @top_users.each do |ranked_user| %>
-    <tr>
-      <td class="diff" height="50px"><%= ranked_user.username %></td>
-      <td class="diff" height="50px" align="center"><%= ranked_user.send("max_#{params[:diff]}") %></td>
+
+    <tr class="legend">
+	<th width="150px">Users</th><th width="100px">Scores</th>
     </tr>
+    
+    <% @top_users.each do |ranked_user| %>
+
+    <tr>
+	<td class="diff" height="50px"><%= ranked_user.username %></td>
+	<td class="diff" height="50px" align="center"><%= ranked_user.send("max_#{params[:diff]}") %></td>
+    </tr>
+    
     <% end %>
+    
 </table>
 
 <%= tweet_button(:via => "indovina_zoo", :url => "http://indovinazoo.com",

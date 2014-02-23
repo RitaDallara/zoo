@@ -1,20 +1,15 @@
-
-
-
-
 <div class="center-div">
-<table class="transparent" >
+    <table class="transparent" >
 
-<tr><th class="legend">Editing animal</th></tr>
-<tr><td></td></tr>
-<tr><td>
+	<tr><th class="legend">Editing animal</th></tr>
+	<tr><td></td></tr>
+	<tr>
+	    <td>
+		<%= render 'form' %>
+		<%= link_to 'Show', @animal %> |
+		<%= link_to 'Back', animals_path %>
+	    </td>
+	</tr>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @animal %> |
-<%= link_to 'Back', animals_path %>
-
-</td></tr>
-
-</table>
+    </table>
 </div>
