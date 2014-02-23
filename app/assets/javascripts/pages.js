@@ -60,8 +60,8 @@ function mytimer()
 	{
 
 		user_answers[i]= false;
-		$('#div_timer').removeClass('hover');
-		$('#div_timer').addClass('div_timer');
+		//$('#div_timer').removeClass('hover');
+		//$('#div_timer').addClass('div_timer');
 		$('#next').click();
 	}
 	if(seconds === 3)
@@ -69,18 +69,13 @@ function mytimer()
 		$('#div_timer').addClass('hover');
 		$('#div_timer').removeClass('div_timer');
 	}
-	document.getElementById("div_timer").innerHTML = seconds;
+	$('#div_timer').html(seconds);
 
 	seconds--;
 
 
 } 
 var timer = setInterval(function(){mytimer()},1000);
-$(window).unload(function(){console.log("PAGE CHANGED!"); clearInterval(timer); xhrObj.abort();});
-
-
-
-
 
 if(answers[0] === '#animal')
 	other = '#alternative';
