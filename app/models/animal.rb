@@ -3,7 +3,7 @@ class Animal < ActiveRecord::Base
 
   has_many :quizzes, :dependent => :destroy
   
-  has_attached_file :avatar, :styles => { :medium => "1300x1300>", :thumb => "100x100>" }
+  has_attached_file :avatar, :styles => { :medium => "640x640>", :thumb => "100x100>" }
 
 
  

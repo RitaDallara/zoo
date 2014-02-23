@@ -3,7 +3,7 @@ $(document).ready(function()
 
 
 
-if ($('h1#game').length){
+if ($('h1#game').length > 0){
 var animal_names = new Array();
 var alternative_names = new Array();
 var animal_image_urls = new Array();
@@ -60,7 +60,14 @@ function mytimer()
 	{
 
 		user_answers[i]= false;
+		$('#div_timer').removeClass('hover');
+		//$('#hover').attr('id', 'div_timer');
 		$('#next').click();
+	}
+	if(seconds === 3)
+	{
+		$('#div_timer').addClass('hover');
+		$('#div_timer').removeClass('div_timer');
 	}
 	document.getElementById("div_timer").innerHTML = seconds;
 
@@ -69,6 +76,7 @@ function mytimer()
 
 } 
 var timer = setInterval(function(){mytimer()},1000);
+$(window ).unload(function(){clearInterval(timer)});
 
 
 
