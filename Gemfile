@@ -46,12 +46,10 @@ gem 'paperclip'
 gem 'rmagick'
 
 # mime-types
-
 gem 'mime-types'
 
-# autocompletion
-
-gem 'rails4-autocomplete'
+# social buttons
+gem "social-buttons", '~> 0.3'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

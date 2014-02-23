@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   respond_to :html, :js
   
   def home
+    @settings = Setting.first
   end
 
   def game
@@ -20,6 +21,7 @@ class PagesController < ApplicationController
     elsif
       current_user.update_max_score(params[:diff],params[:score])
       @top_users = User.find_best("max_#{params[:diff]}")
+      @current_score = params[:score]
     end
   end
 
