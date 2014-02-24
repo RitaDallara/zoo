@@ -1,28 +1,36 @@
-
 <div class="div_sign">
-<h2 class="transparent_sign">Sign in</h2>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+    <h2 class="transparent_sign">Sign in</h2>
 
-<div class="container_sign">
- <div class="div_field_sign"><br />
+    <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 
-  <%= f.email_field :email, :autofocus => true, placeholder: 'Email' %></div>
+	<div class="container_sign">
+	
+	    <div class="div_field_sign">
+		<br />
+		<%= f.email_field :email, :autofocus => true, placeholder: 'Email' %>
+	    </div>
 
-  <div class="div_field_sign"><br />
-  <%= f.password_field :password, placeholder: 'Password' %></div>
+	    <div class="div_field_sign">
+		<br />
+		<%= f.password_field :password, placeholder: 'Password' %>
+	    </div>
 
-  <div></div>
-  <p></p>
+	    <div></div>
+	    
+	    <p></p>
 
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
+	    <% if devise_mapping.rememberable? -%>
+	      <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+	    <% end -%>
 
-</div>
+	</div>
 
- <div class="div_submit"><%= f.submit "Sign in" %></div>
-<% end %>
+	<div class="div_submit">
+	    <%= f.submit "Sign in" %>
+	</div>
+	
+	<% end %>
 
 
 

@@ -8,10 +8,7 @@ class ApplicationController < ActionController::Base
 #config.exceptions_app = self.routes
   
  # unless Rails.application.config.consider_all_requests_local
-    #rescue_from CanCan::AccessDenied do |exception|
-      #redirect_to main_app.root_url, :alert => exception.message
-      #render :file => "#{Rails.root}/public/403.html", :status => 403, :layout => false
-    #end
+
     rescue_from CanCan::AccessDenied, with: lambda { |exception| render_error 403, exception}
     rescue_from ActionController::RoutingError, ActionController::UnknownController, ::AbstractController::ActionNotFound, ActiveRecord::RecordNotFound, with: lambda { |exception| render_error 404, exception }
     #rescue_from Exception, with: lambda { |exception| render_error 500, exception }

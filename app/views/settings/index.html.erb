@@ -1,27 +1,35 @@
 <h1>Allow players to choose between these options.</h1>
 
 <table align="center" class="transparent" cellspacing="0">
-  <thead>
-    <tr class="legend">
-      <th width="300px">Option one</th>
-      <th width="300px">Option two</th>
-      <th width="300px">Option three</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @settings.each do |setting| %>
-      <tr>
-        <td class="diff" align="center" height="100px"><%= setting.optone %></td>
-        <td class="diff" align="center"><%= setting.opttwo %></td>
-        <td class="diff" align="center"><%= setting.optthree %></td>
-        <td class="diff" align="center"><%= link_to 'Change game options', edit_setting_path(setting) %></td>
-      </tr>
-    <% end %>
-  </tbody>
+    <thead>
+    
+	<tr class="legend">
+	    <th width="300px">Option one</th>
+	    <th width="300px">Option two</th>
+	    <th width="300px">Option three</th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	</tr>
+	
+    </thead>
+
+    <tbody>
+    
+	<% @settings.each do |setting| %>
+	
+	    <tr>
+		<td class="diff" align="center" height="100px"><%= setting.optone %></td>
+		<td class="diff" align="center"><%= setting.opttwo %></td>
+		<td class="diff" align="center"><%= setting.optthree %></td>
+		<td class="diff" align="center"><%= link_to 'Change game options', edit_setting_path(setting) %></td>
+	    </tr>
+	    
+	<% end %>
+	
+    </tbody>
+    
 </table>
 
 <br>

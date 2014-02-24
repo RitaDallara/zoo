@@ -1,39 +1,42 @@
 <div class="center-div">
-<% if can? :create, Animal %>
-<%= button_to 'New Animal', new_animal_path, method: :get, id: "new-animal-button"  %>
-<% end %>
+    <% if can? :create, Animal %>
+    <%= button_to 'New Animal', new_animal_path, method: :get, id: "new-animal-button"  %>
+    <% end %>
 </div>
 
 <table class="transparent" align="center" cellspacing="0" border="0">
-  <thead>
-    <tr class="legend">
-      <th>Name</th>
-      <th>Avatar</th>
-      <th>Sound</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
+
+    <thead>
   
-  </thead>
+	<tr class="legend">
+	    <th>Name</th>
+	    <th>Avatar</th>
+	    <th>Sound</th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	</tr>
+  
+    </thead>
 
-
-  <tbody>
-
-    <% @animals.each do |animal| %>
-      <tr><td></td></tr>
-      <tr>
-        <td class="diff" align="center"><%= animal.name %></td>
-        <td class="img-quiz"><%= image_tag animal.avatar.url(:thumb) %></td>
-        <td> <audio controls="controls"><source src="<%= animal.sound.url %>" type="audio/mpeg"></audio></td>
-        <td class="s-e-d"><%= link_to 'Show', animal %></td>
-        <% if can? :destroy, Quiz %>
-        <td class="s-e-d"><%= link_to 'Edit', edit_animal_path(animal) %></td>
-        <td class="s-e-d"><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-      </tr>
-    <% end %>
+    <tbody>
+    
+	<% @animals.each do |animal| %>
+	      <tr><td></td></tr>
+	      <tr>
+		    <td class="diff" align="center"><%= animal.name %></td>
+		    <td class="img-quiz"><%= image_tag animal.avatar.url(:thumb) %></td>
+		    <td> <audio controls="controls"><source src="<%= animal.sound.url %>" type="audio/mpeg"></audio></td>
+		    <td class="s-e-d"><%= link_to 'Show', animal %></td>
+		    <% if can? :destroy, Quiz %>
+		    <td class="s-e-d"><%= link_to 'Edit', edit_animal_path(animal) %></td>
+		    <td class="s-e-d"><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		    <% end %>
+	      </tr>
+	<% end %>
+	
   </tbody>
+  
 </table>
 
 <br>

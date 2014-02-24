@@ -1,41 +1,47 @@
-
-
 <table class="transparent" align="center" cellspacing="0">
-  <thead>
-    <tr class="legend">	 
-      <th>Username</th>
-      <th>Email</th>
-      <th width="150px">Max-easy  </th>
-      <th width="150px">Max-medium  </th>
-      <th width="150px">Max-hard  </th>
-      <th width="50px"></th>
-      <th width="80px"></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @users.each do |user| %>
-      <tr><td></td></tr>
-      <tr height="50px">
-        <td class="diff" align="center" width="200px"><%= user.username %></td>
-        <td class="diff" align="center"><%= user.email %></td>
-        <td class="diff" align="center"><%= user.max_easy %></td>
-        <td class="diff" align="center"><%= user.max_medium %></td>
-        <td class="diff" align="center"><%= user.max_hard %></td>
+    <thead>
+    
+	<tr class="legend">	 
+	    <th>Username</th>
+	    <th>Email</th>
+	    <th width="150px">Max-easy  </th>
+	    <th width="150px">Max-medium  </th>
+	    <th width="150px">Max-hard  </th>
+	    <th width="50px"></th>
+	    <th width="80px"></th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	</tr>
+	
+    </thead>
 
-        <td class="s-e-d"><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td class="s-e-d"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% if not(user.has_role? :admin) %>
-        <td class="s-e-d"> <%= link_to 'Make_Admin', assign_admin_role_path(user) %> </td>
-        <% elsif user.has_role? :admin %>
-        <td class="s-e-d"> <%= link_to 'Demote_to_User', remove_admin_role_path(user) %> </td>
-        <% end %>
-      </tr>
-    <% end %>
-  </tbody>
+    <tbody>
+    
+      <% @users.each do |user| %>
+	  <tr><td></td></tr>
+	  <tr height="50px">
+	      <td class="diff" align="center" width="200px"><%= user.username %></td>
+	      <td class="diff" align="center"><%= user.email %></td>
+	      <td class="diff" align="center"><%= user.max_easy %></td>
+	      <td class="diff" align="center"><%= user.max_medium %></td>
+	      <td class="diff" align="center"><%= user.max_hard %></td>
+
+	      <td class="s-e-d"><%= link_to 'Edit', edit_user_path(user) %></td>
+	      <td class="s-e-d"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	      
+	      <% if not(user.has_role? :admin) %>
+		  <td class="s-e-d"> <%= link_to 'Make_Admin', assign_admin_role_path(user) %> </td>
+	      <% elsif user.has_role? :admin %>
+		  <td class="s-e-d"> <%= link_to 'Demote_to_User', remove_admin_role_path(user) %> </td>
+	      <% end %>
+	      
+	  </tr>
+      <% end %>
+      
+    </tbody>
+    
 </table>
 
 <br>
