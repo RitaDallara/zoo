@@ -10,3 +10,5 @@ ADMIN ACCOUNTS CREDENTIALS
 
 SOME NOTES
 .mp3 files aren't working in Firefox
+
+DB FILE SENT VIA EMAIL
