@@ -34,7 +34,9 @@
 	      <% if not(user.has_role? :admin) %>
 		  <td class="s-e-d"> <%= link_to 'Make_Admin', assign_admin_role_path(user) %> </td>
 	      <% elsif user.has_role? :admin %>
+	          <% if user != current_user %>
 		  <td class="s-e-d"> <%= link_to 'Demote_to_User', remove_admin_role_path(user) %> </td>
+		  <% end %>
 	      <% end %>
 	      
 	  </tr>
