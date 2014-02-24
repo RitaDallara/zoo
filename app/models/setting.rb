@@ -1,13 +1,14 @@
 class Setting < ActiveRecord::Base
-  #validates :optone, :presence => :true
-  #validates :opttwo, :presence => :true
-  #validates :optthree, :presence => :true
+
   validates_presence_of [:optone, :opttwo, :optthree]
   validates_numericality_of [:optone, :opttwo, :optthree], :greater_than => 0, :allow_blank => :true
   validate :enough_quizzes_for_setting
   
   private
   
+  # you can't let the user ask for 33 quizzes if you only have 30...
+  # (this is a more restrictive validation than necessary, but it should have otherwise evaluted
+  # at runtime)
   def enough_quizzes_for_setting
     
     if not(optone.nil?)

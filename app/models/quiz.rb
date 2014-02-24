@@ -11,10 +11,12 @@ class Quiz < ActiveRecord::Base
   validate :validate_difficulty
   
   
+  # random quiz sequence generation, of length num and made up of quizzes of difficulty diff
   def self.rand_quiz(num, diff)
     Quiz.where(id: Quiz.where(difficulty: diff).pluck(:id).sample(num.to_i))
   end
   
+  # minimum number of quizzes across all levels of difficulty
   def self.min_amount
     [Quiz.where(difficulty: "hard").count, Quiz.where(difficulty: "medium").count, Quiz.where(difficulty: "easy").count].min
   end
@@ -30,6 +32,8 @@ class Quiz < ActiveRecord::Base
   end
 
 
+  # quiz is already existing if an identical one exists, or if one associated to the same animals
+  # but with switched positions exists
   def cross_quiz
     straight_dups = Quiz.where(animal_id: animal_id, alternative_id: alternative_id)
     cross_dups = Quiz.where(alternative_id: animal_id, animal_id: alternative_id)

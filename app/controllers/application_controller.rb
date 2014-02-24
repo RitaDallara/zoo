@@ -5,17 +5,16 @@ class ApplicationController < ActionController::Base
   
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
-#config.exceptions_app = self.routes
   
- # unless Rails.application.config.consider_all_requests_local
-
-    rescue_from CanCan::AccessDenied, with: lambda { |exception| render_error 403, exception}
-    rescue_from ActionController::RoutingError, ActionController::UnknownController, ::AbstractController::ActionNotFound, ActiveRecord::RecordNotFound, with: lambda { |exception| render_error 404, exception }
-    #rescue_from Exception, with: lambda { |exception| render_error 500, exception }
-# end
+  # unauthorized and not found errors are redirected to a specific error page
+  # (the "unless" line is commented in order to make sure everything works even in development)
+  # unless Rails.application.config.consider_all_requests_local
+      rescue_from CanCan::AccessDenied, with: lambda { |exception| render_error 403, exception}
+      rescue_from ActionController::RoutingError, ActionController::UnknownController, ::AbstractController::ActionNotFound, ActiveRecord::RecordNotFound, with: lambda { |exception| render_error 404, exception }
+  # end
   
   
-   protected
+  protected
   
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:username, :email, :password, :password_confirmation, :remember_me) }
@@ -23,8 +22,6 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:email, :username, :password, :password_confirmation, :current_password) } 
   end
     
-   
-
 
   before_filter do
     resource = controller_name.singularize.to_sym
@@ -32,7 +29,8 @@ class ApplicationController < ActionController::Base
     params[resource] &&= send(method) if respond_to?(method, true)
   end
   
-   private
+  private
+  # this method renders the appropriate error template
   def render_error(status, exception)
     respond_to do |format|
       format.html { render template: "errors/error_#{status}", layout: 'layouts/application', status: status }

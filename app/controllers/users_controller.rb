@@ -39,12 +39,13 @@ class UsersController < ApplicationController
     end
   end
 
-
+  # a user can be promoted to admin...
   def assign_admin_role
     @user.add_role :admin
     redirect_to users_path
   end
   
+  # ...and demoted back to standard user
   def remove_admin_role
     @user.remove_role :admin
     redirect_to users_path
@@ -54,6 +55,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+    # if password or username are left blank, they won't be changed
     params[:user][:password] = @user.password if params[:user][:password].blank?
     params[:user][:password_confirmation] = @user.password if params[:user][:password_confirmation].blank?
     params[:user][:username] = @user.username if params[:user][:username].blank?

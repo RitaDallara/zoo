@@ -60,6 +60,7 @@ class AnimalsController < ApplicationController
   # DELETE /animals/1
   # DELETE /animals/1.json
   def destroy
+    # we also need to destroy quizzes associated to this animal, if any
     @quiz=Quiz.where(animal_id: @animal.id)
     @quiz2=Quiz.where(alternative_id:  @animal.id)
     @quiz.each do |q|

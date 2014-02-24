@@ -63,6 +63,8 @@ class QuizzesController < ApplicationController
     end
   end
 
+  # random quiz sequence for a game must be generated (according to params chosen by the player)
+  # default format for the generated response is JSON (for client-side JS processing)
   def prepare_game
     @quizzes= Quiz.rand_quiz(params[:num],params[:diff])
   end
